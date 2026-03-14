@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WE FOR A CAUSE | Animal Rescue NGO</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+font-family:'Poppins',sans-serif;
+background:#fafafa;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+.card:hover{
+transform:translateY(-6px);
+transition:.3s;
+}
+.paw{
+position:absolute;
+bottom:-40px;
+font-size:30px;
+opacity:.1;
+animation:floatPaw 15s linear infinite;
+}
+
+@keyframes floatPaw{
+0%{transform:translateY(0)}
+100%{transform:translateY(-800px)}
+}
+body,html{
+  overflow-x: hidden;
+}
+</style>
+
+</head>
+
+<body class="text-gray-800">
+
+<!-- NAVBAR -->
+
+<!-- PROFESSIONAL RESPONSIVE NAVBAR -->
+
+<nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
+
+<div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+
+<!-- Logo -->
+<h1 class="text-xl md:text-2xl font-bold text-teal-400 flex items-center gap-2">
+<img src="./images/doglogo.jpg" alt="logo" class="w-10 h-10 object-cover rounded-full lg:rounded-none">
+WEFORACAUSE
+</h1>
+
+<!-- Desktop Menu -->
+<div class="hidden md:flex items-center gap-8 font-medium">
+
+<a href="./index.html" class="hover:text-teal-400 transition">Home</a>
+<a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
+<a href="./about.html" class="hover:text-teal-400 transition">About</a>
+<a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
+<a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
+
+<a href="./donationform.html"
+class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
+
+Donate
+
+</a>
+
+</div>
+
+<!-- Mobile Button -->
+<button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+☰
+</button>
+
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+class="hidden md:hidden bg-slate-900 border-t border-slate-700">
+
+<div class="flex flex-col text-center py-6 space-y-4 font-medium">
+
+<a href="./index.html" class="hover:text-teal-400">Home</a>
+<a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
+<a href="./about.html" class="hover:text-teal-400">About</a>
+<a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
+<a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
+
+<a href="./donationform.html"
+class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
+
+Donate
+
+</a>
+
+</div>
+
+</div>
+
+</nav>
+<!-- HERO SECTION -->
+
+<section id="home"
+class="relative min-h-screen py-20 flex items-center justify-center text-center text-white bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1543466835-00a7907e9de1');">
+
+<!-- Overlay -->
+<div class="absolute inset-0 bg-black/60"></div>
+
+<div class="relative lg:bg-gray-500/50 rounded-3xl py-10 mt-20 z-10 max-w-5xl mx-auto px-6">
+
+<!-- Heading -->
+<h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+Saving Dogs & Cats
+<span class="text-teal-400 block">One Life at a Time</span>
+</h1>
+
+<!-- Description -->
+<p class="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
+We rescue injured and abandoned animals, provide medical treatment,
+and help them find safe and loving homes.
+</p>
+
+<!-- Buttons -->
+<div class="flex flex-wrap justify-center gap-4 mb-16">
+
+<a href="https://www.instagram.com/weforacause"
+target="_blank"
+class="bg-teal-500 hover:bg-teal-600 px-8 py-3 rounded-full font-semibold transition">
+
+Follow Our Work
+
+</a>
+
+<a href="#donate"
+class="bg-pink-500 hover:bg-pink-600 px-8 py-3 rounded-full font-semibold transition">
+
+Donate Now
+
+</a>
+
+</div>
+
+<!-- Rescue Numbers -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+<div>
+<h3 class="text-3xl font-bold text-teal-400 counter" data-target="150">0</h3>
+<p class="text-gray-200 text-sm mt-1">Animals Rescued</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-teal-400 counter" data-target="300">0</h3>
+<p class="text-gray-200 text-sm mt-1">Animals Treated</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-teal-400 counter" data-target="80">0</h3>
+<p class="text-gray-200 text-sm mt-1">Adopted</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-teal-400 counter" data-target="50">0</h3>
+<p class="text-gray-200 text-sm mt-1">Volunteers</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ABOUT SECTION -->
+
+<section id="about" class="py-24 bg-slate-100">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<!-- IMAGE -->
+
+<img 
+src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d"
+class="rounded-2xl shadow-xl w-full object-cover"
+data-aos="fade-right">
+
+<!-- CONTENT -->
+
+<div data-aos="fade-left">
+
+<h2 class="text-4xl font-bold mb-6 text-slate-900">
+About <span class="text-teal-500">We For A Cause</span>
+</h2>
+
+<p class="text-gray-700 mb-6 leading-relaxed">
+
+We For A Cause Foundation is an animal welfare initiative dedicated to
+rescuing injured, abandoned, and helpless dogs and cats from the streets.
+Our team works passionately to provide medical treatment, safe shelter,
+and rehabilitation for animals in need.
+
+</p>
+
+<p class="text-gray-700 mb-8 leading-relaxed">
+
+Through rescue operations, feeding drives, and adoption programs,
+we aim to give every rescued animal a second chance at life while
+spreading awareness about compassion toward animals.
+
+</p>
+
+<!-- VISION MISSION -->
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+<div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+data-aos="zoom-in">
+<i class="fa-solid fa-paw text-blue-600 text-3xl mb-4"></i>
+
+<h3 class="text-lg font-semibold text-teal-600 mb-2">
+Our Vision
+</h3>
+
+<p class="text-gray-600 text-sm">
+To build a world where every animal is safe, cared for,
+and treated with kindness.
+</p>
+
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition"
+data-aos="zoom-in" data-aos-delay="200">
+<i class="fa-solid fa-heart text-red-500 text-3xl mb-4"></i>
+
+<h3 class="text-lg font-semibold text-teal-600 mb-2">
+Our Mission
+</h3>
+
+<p class="text-gray-600 text-sm">
+To rescue injured animals, provide medical care,
+promote adoption, and spread awareness about animal welfare.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CAUSES -->
+
+<section id="causes" class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-teal-600" data-aos="fade-down">Our Work</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      
+      <!-- Animal Rescue -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-dog text-teal-500 text-4xl mb-6"></i>
+        <h3 class="font-bold text-2xl mb-3 text-slate-900">Animal Rescue</h3>
+        <p class="text-gray-600">Rescuing injured and abandoned animals and providing immediate care.</p>
+      </div>
+
+      <!-- Medical Care -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-syringe text-green-500 text-4xl mb-6"></i>
+        <h3 class="font-bold text-2xl mb-3 text-slate-900">Medical Care</h3>
+        <p class="text-gray-600">Providing treatment, vaccinations, and surgeries to animals in need.</p>
+      </div>
+
+      <!-- Feeding Drives -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+        <i class="fa-solid fa-bowl-food text-orange-500 text-4xl mb-6"></i>
+        <h3 class="font-bold text-2xl mb-3 text-slate-900">Feeding Drives</h3>
+        <p class="text-gray-600">Organizing daily feeding programs for stray and abandoned animals.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ADOPTION -->
+
+<section id="adopt" class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    
+    <!-- Section Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-teal-600" data-aos="fade-down">Adopt a Friend</h2>
+
+    <!-- Adopt Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b" class="h-64 w-full object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-2xl mb-2 text-slate-900">Bella</h3>
+          <p class="text-gray-600 mb-4">Friendly rescued dog.</p>
+          <a href="https://www.instagram.com/weforacause" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-full font-semibold transition">Adopt</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" class="h-64 w-full object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-2xl mb-2 text-slate-900">Milo</h3>
+          <p class="text-gray-600 mb-4">Playful rescued kitten.</p>
+          <a href="https://www.instagram.com/weforacause" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-full font-semibold transition">Adopt</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e" class="h-64 w-full object-cover">
+        <div class="p-6">
+          <h3 class="font-bold text-2xl mb-2 text-slate-900">Rocky</h3>
+          <p class="text-gray-600 mb-4">Recovered rescue dog.</p>
+          <a href="https://www.instagram.com/weforacause" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-full font-semibold transition">Adopt</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="w-full bg-white py-16 md:py-24 px-4 md:px-8">
+
+<div class="max-w-7xl mx-auto">
+
+<!-- Section Header -->
+<div class="text-center mb-14">
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1e3a3a]">
+    What Our <span class="text-[#2A9D8F]">Supporters Say</span>
+  </h2>
+
+  <p class="text-[#2c4a48] text-base md:text-lg mt-4 max-w-2xl mx-auto">
+    Real stories from people whose lives were touched by our efforts to rescue and care for animals in need.
+  </p>
+</div>
+
+
+<!-- Testimonials Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- CARD 1 -->
+<div data-aos="fade-up"
+class="group bg-[#F8FAFC] p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+<div class="flex items-center gap-1 text-yellow-400 mb-4">
+<i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+<span class="text-gray-500 text-sm ml-2">5.0</span>
+</div>
+
+<p class="text-[#1e3a3a] text-sm md:text-base leading-relaxed mb-6">
+  Impressive! "We For A Cause" stands out with diverse projects, including animal welfare. The 800+ animals saved in three years reflect impactful work. The mission for a better society is succinct, and the call-to-action on LinkedIn is engaging. A commendable force for positive change!
+</p>
+
+<div class="flex items-center gap-4 mt-auto">
+<div class="w-12 h-12 bg-[#2A9D8F]/20 rounded-full flex items-center justify-center text-[#2A9D8F] font-bold">S</div>
+<div>
+<h4 class="font-semibold text-[#1e3a3a]">Bhavesh Chhabria</h4>
+
+</div>
+</div>
+
+</div>
+
+
+<!-- CARD 2 -->
+<div data-aos="fade-up" data-aos-delay="100"
+     class="group bg-[#F8FAFC] p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+  <div class="flex items-center gap-1 text-yellow-400 mb-4">
+    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+    <span class="text-gray-500 text-sm ml-2">5.0</span>
+  </div>
+
+  <p class="text-[#1e3a3a] text-sm md:text-base leading-relaxed mb-6">
+    “We for a Cause has helped us a lot emotionally and mentally when my baby Simba was diagnosed with Distemper. Avani and her team tried their best to save our baby, but God had a different fate for our Simba.  
+    <br><br>
+    Wish you all the luck and support. You guys are doing a great job.”
+  </p>
+
+  <div class="flex items-center gap-4 mt-auto">
+    <div class="w-12 h-12 bg-[#2A9D8F]/20 rounded-full flex items-center justify-center text-[#2A9D8F] font-bold">S</div>
+    <div>
+      <h4 class="font-semibold text-[#1e3a3a]">Sushant Pandey</h4>
+      
+    </div>
+  </div>
+
+</div>
+
+
+<!-- CARD 3 -->
+<div data-aos="fade-up" data-aos-delay="200"
+     class="group bg-[#F8FAFC] p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+  <div class="flex items-center gap-1 text-yellow-400 mb-4">
+    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+    <span class="text-gray-500 text-sm ml-2">5.0</span>
+  </div>
+
+  <p class="text-[#1e3a3a] text-sm md:text-base leading-relaxed mb-6">
+    “You are doing great work. I am very happy that we have such an organization in India which saves the lives of innocent animals at the right time. You guys keep performing your duties like this. May God always bless you all. जय सिया राम! ❤️🚩🙏”
+  </p>
+
+  <div class="flex items-center gap-4 mt-auto">
+    <div class="w-12 h-12 bg-[#2A9D8F]/20 rounded-full flex items-center justify-center text-[#2A9D8F] font-bold">P</div>
+    <div>
+      <h4 class="font-semibold text-[#1e3a3a]">Poonam</h4>
+      <p class="text-sm text-gray-500">Verified Supporter</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- CARD 4 -->
+<div data-aos="fade-up"
+     class="group bg-[#F8FAFC] p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+  <div class="flex items-center gap-1 text-yellow-400 mb-4">
+    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+    <span class="text-gray-500 text-sm ml-2">5.0</span>
+  </div>
+
+  <p class="text-[#1e3a3a] text-sm md:text-base leading-relaxed mb-6">
+    “Well, no words can describe the kind of work these guys are doing. The hard work that goes behind taking care of even one animal is a lot. I urge everyone to please care for stray animals as much as possible. Please try to help them with any amount of donation.”
+  </p>
+
+  <div class="flex items-center gap-4 mt-auto">
+    <div class="w-12 h-12 bg-[#2A9D8F]/20 rounded-full flex items-center justify-center text-[#2A9D8F] font-bold">K</div>
+    <div>
+      <h4 class="font-semibold text-[#1e3a3a]">Kunal</h4>
+      <p class="text-sm text-gray-500">Verified Supporter</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- CARD 5 -->
+<div data-aos="fade-up" data-aos-delay="100"
+     class="group bg-[#F8FAFC] p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+  <div class="flex items-center gap-1 text-yellow-400 mb-4">
+    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+    <span class="text-gray-500 text-sm ml-2">5.0</span>
+  </div>
+
+  <p class="text-[#1e3a3a] text-sm md:text-base leading-relaxed mb-6">
+    “I’m so happy to see there are people who put the needs of such beautiful creatures above their own & take action to help them whenever they can.  
+    <br><br>
+    Kudos to you guys for doing a wonderful & much-needed work to help them.”
+  </p>
+
+  <div class="flex items-center gap-4 mt-auto">
+    <div class="w-12 h-12 bg-[#2A9D8F]/20 rounded-full flex items-center justify-center text-[#2A9D8F] font-bold">H</div>
+    <div>
+      <h4 class="font-semibold text-[#1e3a3a]">Hardik Patel</h4>
+      <p class="text-sm text-gray-500">Verified Supporter</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- CARD 6 -->
+<div data-aos="fade-up" data-aos-delay="200"
+     class="group bg-[#F8FAFC] p-8 rounded-3xl shadow-lg border border-gray-100 flex flex-col h-full transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+
+  <div class="flex items-center gap-1 text-yellow-400 mb-4">
+    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+    <span class="text-gray-500 text-sm ml-2">5.0</span>
+  </div>
+
+  <p class="text-[#1e3a3a] text-sm md:text-base leading-relaxed mb-6">
+    “WFC helped me rescue and treat my first case of Millie (December 2020). She was run over by a vehicle and her paw was completely crushed. WFC took full responsibility of her treatment + rehabilitation. After recovery, they also made sure that she was adopted by a good family. Kudos ❤️”
+  </p>
+
+  <div class="flex items-center gap-4 mt-auto">
+    <div class="w-12 h-12 bg-[#2A9D8F]/20 rounded-full flex items-center justify-center text-[#2A9D8F] font-bold">H</div>
+    <div>
+      <h4 class="font-semibold text-[#1e3a3a]">Heet Shah</h4>
+      <p class="text-sm text-gray-500">Verified Supporter</p>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="faq" class="py-24 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-teal-600 text-center" data-aos="fade-down">Frequently Asked Questions</h2>
+
+    <div class="space-y-6">
+
+      <!-- FAQ Item 1 -->
+      <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="100">
+        <button class="w-full text-left flex justify-between items-center font-semibold text-gray-900 faq-btn">
+          How can I adopt an animal?
+          <span class="faq-icon text-teal-600">+</span>
+        </button>
+        <p class="mt-4 text-gray-600 faq-answer hidden">
+          You can adopt by contacting us through our Instagram or donation page and following our adoption process.
+        </p>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="200">
+        <button class="w-full text-left flex justify-between items-center font-semibold text-gray-900 faq-btn">
+          Can I volunteer with your foundation?
+          <span class="faq-icon text-teal-600">+</span>
+        </button>
+        <p class="mt-4 text-gray-600 faq-answer hidden">
+          Yes! We welcome volunteers for rescues, feeding drives, and awareness campaigns. Contact us to get started.
+        </p>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="300">
+        <button class="w-full text-left flex justify-between items-center font-semibold text-gray-900 faq-btn">
+          How do you use donations?
+          <span class="faq-icon text-teal-600">+</span>
+        </button>
+        <p class="mt-4 text-gray-600 faq-answer hidden">
+          Donations go directly to animal rescue, medical care, food, and shelter operations. We maintain transparency for every contribution.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- INSTAGRAM -->
+
+<section id="rescue" class="py-24 bg-gray-50 text-center">
+
+  <!-- Section Header -->
+  <div class="mb-12" data-aos="fade-down">
+    <h2 class="text-4xl md:text-5xl font-bold text-teal-600 mb-3">Our Rescue Work</h2>
+    <p class="text-gray-600 md:text-lg max-w-2xl mx-auto">Take a look at some of the amazing rescues and transformations we've accomplished with your support!</p>
+  </div>
+
+  <!-- Image Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
+    
+    <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8" alt="Rescue 1" class="w-full h-56 object-cover transform transition duration-500 hover:scale-105">
+    </div>
+
+    <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006" alt="Rescue 2" class="w-full h-56 object-cover transform transition duration-500 hover:scale-105">
+    </div>
+
+    <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+      <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Rescue 3" class="w-full h-56 object-cover transform transition duration-500 hover:scale-105">
+    </div>
+
+    <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="400">
+      <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" alt="Rescue 4" class="w-full h-56 object-cover transform transition duration-500 hover:scale-105">
+    </div>
+
+  </div>
+
+  <!-- Instagram Button -->
+  <a href="https://www.instagram.com/weforacause" target="_blank"
+     class="inline-block mt-10 bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg hover:shadow-xl"
+     data-aos="fade-up" data-aos-delay="500">
+    Visit Instagram
+  </a>
+
+</section>
+
+
+
+<!-- DONATE -->
+
+<section id="donate" class="py-24 bg-blue-900 text-center text-white relative overflow-hidden">
+
+  <!-- Optional floating paw animations -->
+  <div class="absolute top-10 left-10 animate-bounce text-4xl opacity-20">🐾</div>
+  <div class="absolute bottom-16 right-16 animate-bounce text-4xl opacity-20">🐾</div>
+
+  <!-- Section Content -->
+  <div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-teal-400">Support Our Mission</h2>
+    <p class="text-lg md:text-xl mb-10 text-blue-100">
+      Your donation helps rescue injured animals, provide medical care, and give them a second chance at life.
+    </p>
+
+    <a href="donationform.html" target="_blank"
+       class="bg-pink-500 hover:bg-pink-600 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-xl transition transform hover:-translate-y-1"
+       data-aos="zoom-in" data-aos-delay="200">
+      Donate Now
+    </a>
+  </div>
+
+</section>
+<!-- MAP / LOCATION SECTION -->
+
+<section id="location" class="py-24 bg-gray-100">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h2 class="text-4xl font-bold text-center mb-10">
+      Find Us
+    </h2>
+
+    <p class="text-center text-gray-600 mb-12">
+      Visit our rescue center or contact us if you find an injured animal.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- GOOGLE MAP -->
+
+      <div class="rounded-xl overflow-hidden shadow-lg">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d481452.52907201846!2d72.5203586!3d19.4836632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b93bf3ff50b5%3A0xc6c967c3914958b8!2sWe%20For%20A%20Cause!5e0!3m2!1sen!2sin!4v1773423579788!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+      </div>
+
+
+      <!-- CONTACT INFO -->
+
+      <div class="bg-white p-8 rounded-xl shadow">
+
+        <h3 class="text-2xl font-semibold mb-6">
+          Contact Information
+        </h3>
+
+        <p class="mb-4 text-gray-600">
+          📍 <strong>Address:</strong><br>
+          Shiv Tekdi, Shiv Ratan Marg, Kisan Nagar 3, Kisan Nagar, Thane West, Thane, Maharashtra 400604
+        </p>
+
+        <p class="mb-4 text-gray-600">
+          📞 <strong>Phone:</strong><br>
+          +91 09594465856
+        </p>
+
+        <p class="mb-4 text-gray-600">
+          📧 <strong>Email:</strong><br>
+          weforacause@email.com
+        </p>
+
+        <a href="https://www.google.com/maps"
+          target="_blank"
+          class="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">
+
+          Get Directions
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 text-gray-300 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+    <!-- Logo & About -->
+    <div>
+      <h1 class="text-2xl font-bold text-teal-400 mb-4">WE FOR A CAUSE</h1>
+      <p class="text-gray-400 text-sm">
+        Dedicated to rescuing injured and abandoned animals, providing care, and helping them find loving homes.
+      </p>
+      <p class="mt-4 text-teal-400 italic text-sm">
+        "Every life matters. Make a difference today!"
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="#home" class="hover:text-teal-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-teal-400 transition">About</a></li>
+        <li><a href="adopt.html" class="hover:text-teal-400 transition">Adopt</a></li>
+        <li><a href="volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a></li>
+        <li><a href="donationform.html" class="hover:text-teal-400 transition">Donate</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+      <p class="text-gray-400 text-sm">📍  Shiv Tekdi, Shiv Ratan Marg, Kisan Nagar 3, Kisan Nagar, Thane West, Thane, Maharashtra 400604</p>
+      <p class="text-gray-400 text-sm">📧 info@weforacause.org</p>
+      <p class="text-gray-400 text-sm">📞 +91 09594465856</p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-4">
+        <a href="https://www.instagram.com/weforacause" target="_blank" class="text-pink-500 hover:text-pink-600 transition text-xl"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-blue-600 hover:text-blue-700 transition text-xl"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-blue-400 hover:text-blue-500 transition text-xl"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Newsletter</h3>
+      <form class="flex flex-col gap-2">
+        <input type="email" placeholder="Your Email" class="p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 border border-gray-700 text-gray-900">
+        <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-semibold transition">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-12 border-t border-gray-800 pt-6 text-gray-500 text-sm text-center">
+    © 2026 WE FOR A CAUSE FOUNDATION. All rights reserved.
+  </div>
+</footer>
+
+</body>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+/* MOBILE MENU TOGGLE */
+
+const menuBtn = document.getElementById("menu-btn")
+const mobileMenu = document.getElementById("mobile-menu")
+
+menuBtn.addEventListener("click", () => {
+
+mobileMenu.classList.toggle("hidden")
+
+})
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCount = () => {
+
+const target = +counter.getAttribute('data-target');
+const count = +counter.innerText;
+
+const speed = 50;
+
+const inc = target / speed;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + inc);
+setTimeout(updateCount,30);
+
+}
+
+else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCount();
+
+});
+
+
+
+AOS.init({
+duration:1000,
+once:true
+});
+const faqButtons = document.querySelectorAll('.faq-btn');
+
+  faqButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+
+      answer.classList.toggle('hidden');
+      icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+    });
+  });
+AOS.init({
+    once: true,
+    duration: 800,
+    offset: 120,
+  });
+
+
+
+
+// CLOSE MENU WHEN SCROLL
+window.addEventListener("scroll", () => {
+mobileMenu.classList.add("hidden");
+});
+
+
+
+</script>
+
+</html>
