@@ -30,6 +30,49 @@ WEFORACAUSE
 <a href="./about.html" class="hover:text-teal-400 transition">About</a>
 <a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
 <a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
+<div class="relative">
+
+<button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
+Projects
+<span class="text-xs">▼</span>
+</button>
+
+<!-- Dropdown -->
+<div id="projects-menu" class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
+
+<a href="prakalpbezuban.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Bezuban
+</a>
+
+<a href="prakalpparyavarana.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Paryavarana
+</a>
+
+<a href="womenempowerment.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Women Empowerment
+</a>
+
+<a href="prakalpsaath.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Saath
+</a>
+
+<a href="prakalpchaitanyan.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Chaitanyan
+</a>
+
+<a href="prakalpmahwari.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Mahwari
+</a>
+
+</div>
+
+</div>
 
 <a href="./donationform.html"
 class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
@@ -196,6 +239,18 @@ Donate
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
+  const projectBtn = document.getElementById("projects-btn");
+const projectMenu = document.getElementById("projects-menu");
+
+projectBtn.addEventListener("click", () => {
+  projectMenu.classList.toggle("hidden");
+});
+  const projectToggle = document.getElementById("project-toggle");
+const projectMobile = document.getElementById("project-mobile");
+
+projectToggle.addEventListener("click", () => {
+  projectMobile.classList.toggle("hidden");
+});
 
 /* MOBILE MENU TOGGLE */
 
