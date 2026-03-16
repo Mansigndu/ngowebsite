@@ -7,11 +7,14 @@
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- AOS Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
 
   <style>
     body {
@@ -32,10 +35,9 @@
 
 <!-- Logo -->
 <h1 class="text-xl md:text-2xl font-bold text-teal-400 flex items-center gap-2">
-<a href="index.html"><img src="./images/doglogo.jpg" alt="logo" class="w-10 h-10 object-cover rounded-full">
+<a href="index.html"><img src="./images/doglogo.jpg" alt="logo" class="w-10 h-10 object-cover rounded-full lg:rounded-none">
 WEFORACAUSE
-</h1>
-</a>
+</h1></a>
 
 <!-- Desktop Menu -->
 <div class="hidden md:flex items-center gap-8 font-medium">
@@ -116,6 +118,23 @@ class="hidden md:hidden bg-slate-900 border-t border-slate-700">
 <a href="./about.html" class="hover:text-teal-400">About</a>
 <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
 <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
+<div>
+
+<button id="project-toggle" class="w-full hover:text-teal-400">
+Projects ▼
+</button>
+
+<div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
+
+<a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
+<a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
+<a href="womenempowerment.html" class="hover:text-teal-400">Women Empowerment</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Saath</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Chaitanyan</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Mahwari</a>
+</div>
+
+</div>
 
 <a href="./donationform.html"
 class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
@@ -129,7 +148,6 @@ Donate
 </div>
 
 </nav>
-
   
 <!-- Volunteer Form Section -->
 <section class="bg-slate-50 py-16 px-4">
@@ -271,7 +289,7 @@ We respect your privacy. Your information will not be shared.
 
     <!-- Logo & About -->
     <div>
-      <a href="index.html"><h1 class="text-2xl font-bold text-teal-400 mb-4">WE FOR A CAUSE</h1></a>
+      <h1 class="text-2xl font-bold text-teal-400 mb-4">WE FOR A CAUSE</h1>
       <p class="text-white text-sm">
         Dedicated to rescuing injured and abandoned animals, providing care, and helping them find loving homes.
       </p>
@@ -293,7 +311,7 @@ We respect your privacy. Your information will not be shared.
     </div>
 
     <!-- Contact Info -->
-     <div>
+   <div>
   <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
 
   <p class="text-white text-sm">
@@ -353,12 +371,7 @@ We respect your privacy. Your information will not be shared.
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      once: true,
-      duration: 800,
-      offset: 120,
-    });
-    const projectBtn = document.getElementById("projects-btn");
+  const projectBtn = document.getElementById("projects-btn");
 const projectMenu = document.getElementById("projects-menu");
 
 projectBtn.addEventListener("click", () => {
@@ -381,6 +394,7 @@ menuBtn.addEventListener("click", () => {
 mobileMenu.classList.toggle("hidden")
 
 })
+
 const counters = document.querySelectorAll('.counter');
 
 counters.forEach(counter => {
@@ -430,10 +444,21 @@ const faqButtons = document.querySelectorAll('.faq-btn');
       icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
     });
   });
-  // CLOSE MENU WHEN SCROLL
+AOS.init({
+    once: true,
+    duration: 800,
+    offset: 120,
+  });
+
+
+
+
+// CLOSE MENU WHEN SCROLL
 window.addEventListener("scroll", () => {
 mobileMenu.classList.add("hidden");
 });
-  </script>
-</body>
+
+
+
+</script>
 </html>
