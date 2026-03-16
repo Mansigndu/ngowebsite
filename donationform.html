@@ -28,7 +28,7 @@
 
 <!-- Logo -->
 <h1 class="text-xl md:text-2xl font-bold text-teal-400 flex items-center gap-2">
-<a href="index.html"><img src="./images/doglogo.jpg" alt="logo" class="w-10 h-10 object-cover rounded-full">
+<a href="index.html"><img src="./images/doglogo.jpg" alt="logo" class="w-10 h-10 object-cover rounded-full lg:rounded-none">
 WEFORACAUSE
 </h1></a>
 
@@ -40,6 +40,49 @@ WEFORACAUSE
 <a href="./about.html" class="hover:text-teal-400 transition">About</a>
 <a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
 <a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
+<div class="relative">
+
+<button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
+Projects
+<span class="text-xs">▼</span>
+</button>
+
+<!-- Dropdown -->
+<div id="projects-menu" class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
+
+<a href="prakalpbezuban.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Bezuban
+</a>
+
+<a href="prakalpparyavarana.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Paryavarana
+</a>
+
+<a href="womenempowerment.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Women Empowerment
+</a>
+
+<a href="prakalpsaath.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Saath
+</a>
+
+<a href="prakalpchaitanyan.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Chaitanyan
+</a>
+
+<a href="prakalpmahwari.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Mahwari
+</a>
+
+</div>
+
+</div>
 
 <a href="./donationform.html"
 class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
@@ -68,6 +111,23 @@ class="hidden md:hidden bg-slate-900 border-t border-slate-700">
 <a href="./about.html" class="hover:text-teal-400">About</a>
 <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
 <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
+<div>
+
+<button id="project-toggle" class="w-full hover:text-teal-400">
+Projects ▼
+</button>
+
+<div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
+
+<a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
+<a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
+<a href="womenempowerment.html" class="hover:text-teal-400">Women Empowerment</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Saath</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Chaitanyan</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Mahwari</a>
+</div>
+
+</div>
 
 <a href="./donationform.html"
 class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
@@ -87,7 +147,7 @@ Donate
     <div class="max-w-4xl mx-auto px-6">
       <!-- Form Header -->
       <div class="text-center mb-12" data-aos="fade-down">
-        <h2 class="text-4xl md:text-5xl font-bold text-teal-600 mb-3">Donate Now</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-teal-600 mt-10 mb-3">Donate Now</h2>
         <p class="text-gray-600 md:text-lg">Your contribution helps rescue and care for dogs and cats in need.</p>
       </div>
 
@@ -123,6 +183,20 @@ Donate
           <input type="text" name="city" placeholder="Enter your city" required
                  class="w-full border border-gray-300 p-3 rounded-lg mt-1 focus:ring-2 focus:ring-teal-400 focus:outline-none">
         </label>
+        <div>
+<label class="w-full">
+<span class="textgray-700 font-medium">PAN Number <span class="text-red-500">*</span></span>
+</label>
+<input 
+type="text" 
+name="pan number"
+placeholder="Enter PAN number"
+required
+pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+title="Enter valid PAN (Example: ABCDE1234F)"
+id="panInput"
+class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400">
+</div>
 
         <!-- Aadhar (Optional) -->
         <label class="w-full">
@@ -148,7 +222,7 @@ Donate
         <!-- Submit Button -->
         <div class="flex justify-center">
           <button type="submit"
-                  class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-12 rounded-full text-lg transition shadow-md hover:shadow-lg">
+                  class="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-12 rounded-full text-lg transition shadow-md hover:shadow-lg">
             Donate Now
           </button>
         </div>
@@ -291,6 +365,10 @@ Prakalp Mahwari
       duration: 800,
       offset: 120,
     });
+    // PAN auto-uppercase
+document.getElementById('panInput').addEventListener('input', function() {
+  this.value = this.value.toUpperCase();
+});
 
     // JS Validation
     function validateDonationForm() {

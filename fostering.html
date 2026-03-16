@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Foster Parent Application</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-slate-50 font-[Poppins]">
+    <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
+
+<div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+
+<!-- Logo -->
+<h1 class="text-xl md:text-2xl font-bold text-teal-400 flex items-center gap-2">
+<a href="index.html"><img src="./images/doglogo.jpg" alt="logo" class="w-10 h-10 object-cover rounded-full lg:rounded-none">
+WEFORACAUSE
+</h1></a>
+
+<!-- Desktop Menu -->
+<div class="hidden md:flex items-center gap-8 font-medium">
+
+<a href="./index.html" class="hover:text-teal-400 transition">Home</a>
+<a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
+<a href="./about.html" class="hover:text-teal-400 transition">About</a>
+<a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
+<a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
+<div class="relative">
+
+<button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
+Projects
+<span class="text-xs">▼</span>
+</button>
+
+<!-- Dropdown -->
+<div id="projects-menu" class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
+
+<a href="prakalpbezuban.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Bezuban
+</a>
+
+<a href="prakalpparyavarana.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Paryavarana
+</a>
+
+<a href="womenempowerment.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Women Empowerment
+</a>
+
+<a href="prakalpsaath.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Saath
+</a>
+
+<a href="prakalpchaitanyan.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Chaitanyan
+</a>
+
+<a href="prakalpmahwari.html" 
+class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+Prakalp Mahwari
+</a>
+
+</div>
+
+</div>
+
+<a href="./donationform.html"
+class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
+
+Donate
+
+</a>
+
+</div>
+
+<!-- Mobile Button -->
+<button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+☰
+</button>
+
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+class="hidden md:hidden bg-slate-900 border-t border-slate-700">
+
+<div class="flex flex-col text-center py-6 space-y-4 font-medium">
+
+<a href="./index.html" class="hover:text-teal-400">Home</a>
+<a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
+<a href="./about.html" class="hover:text-teal-400">About</a>
+<a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
+<a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
+<div>
+
+<button id="project-toggle" class="w-full hover:text-teal-400">
+Projects ▼
+</button>
+
+<div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
+
+<a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
+<a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
+<a href="womenempowerment.html" class="hover:text-teal-400">Women Empowerment</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Saath</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Chaitanyan</a>
+<a href="adoptiondrive.html" class="hover:text-teal-400">Prakalp Mahwari</a>
+</div>
+
+</div>
+
+<a href="./donationform.html"
+class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
+
+Donate
+
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- PAGE HEADER -->
+
+<section class="bg-slate-900 text-white py-16 text-center">
+
+<h1 class="text-3xl md:text-4xl font-bold text-teal-400 mt-20">
+Become a Foster Parent
+</h1>
+
+<p class="text-gray-300 mt-3 max-w-xl mx-auto">
+Help rescued animals recover in a loving home until they find their forever family.
+</p>
+
+</section>
+
+
+
+<!-- MAIN SECTION -->
+
+<section class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10 items-start">
+
+
+<!-- LEFT SIDE INFO -->
+
+<div>
+
+<img
+src="https://images.unsplash.com/photo-1543466835-00a7907e9de1"
+class="rounded-xl shadow-lg mb-6">
+
+<h2 class="text-2xl font-bold text-slate-900 mb-4">
+Why Foster?
+</h2>
+
+<p class="text-gray-600 mb-4">
+Fostering gives rescued animals a safe place to recover while they wait for adoption.
+It also helps our rescue organization save more animals in need.
+</p>
+
+<ul class="space-y-3 text-gray-700">
+
+<li>🐶 Provide temporary care for rescued animals</li>
+
+<li>🏡 Help them adjust to a home environment</li>
+
+<li>💚 Prepare them for adoption</li>
+
+<li>✨ Make a life-saving difference</li>
+
+</ul>
+
+</div>
+
+
+
+<!-- RIGHT SIDE FORM -->
+
+<div class="bg-white p-8 rounded-xl shadow-lg">
+
+<h2 class="text-2xl font-bold text-slate-900 mb-6">
+Foster Application
+</h2>
+
+<form id="fosterForm" class="space-y-4">
+
+
+<div>
+<label class="text-sm font-semibold text-gray-700">
+Full Name *
+</label>
+
+<input type="text" required
+class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 focus:ring-2 focus:ring-teal-500 outline-none">
+</div>
+
+
+<div>
+<label class="text-sm font-semibold text-gray-700">
+Email *
+</label>
+
+<input type="email" required
+class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 focus:ring-2 focus:ring-teal-500 outline-none">
+</div>
+
+
+<div>
+<label class="text-sm font-semibold text-gray-700">
+Phone *
+</label>
+
+<input type="tel" required
+class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 focus:ring-2 focus:ring-teal-500 outline-none">
+</div>
+
+
+<div>
+<label class="text-sm font-semibold text-gray-700">
+City *
+</label>
+
+<input type="text" required
+class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 focus:ring-2 focus:ring-teal-500 outline-none">
+</div>
+
+
+<div>
+<label class="text-sm font-semibold text-gray-700">
+Message *
+</label>
+
+<textarea rows="3" required
+class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-1 focus:ring-2 focus:ring-teal-500 outline-none resize-none"></textarea>
+</div>
+
+
+<button
+type="submit"
+class="w-full bg-teal-500 text-white py-3 rounded-full font-semibold hover:bg-teal-600 transition">
+
+Submit Application
+
+</button>
+
+</form>
+
+
+<p id="successMessage"
+class="hidden text-green-600 font-semibold text-center mt-4">
+
+Thank you 💚 Our team will contact you soon.
+
+</p>
+
+</div>
+
+</section>
+<footer class="bg-gray-900 text-gray-300 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+    <!-- Logo & About -->
+    <div>
+      <h1 class="text-2xl font-bold text-teal-400 mb-4">WE FOR A CAUSE</h1>
+      <p class="text-white text-sm">
+        Dedicated to rescuing injured and abandoned animals, providing care, and helping them find loving homes.
+      </p>
+      <p class="mt-4 text-white italic text-sm">
+        "Every life matters. Make a difference today!"
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+      <ul class="space-y-2 text-white">
+        <li><a href="#home" class="hover:text-teal-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-teal-400 transition">About</a></li>
+        <li><a href="adopt.html" class="hover:text-teal-400 transition">Adopt</a></li>
+        <li><a href="volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a></li>
+        <li><a href="donationform.html" class="hover:text-teal-400 transition">Donate</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+   <div>
+  <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+
+  <p class="text-white text-sm">
+    📍 Shiv Tekdi, Shiv Ratan Marg, Kisan Nagar 3, Kisan Nagar, Thane West, Thane, Maharashtra 400604
+  </p>
+
+  <p class="text-white text-sm">
+    📧 <a href="mailto:info@weforacause.org" class="hover:underline">
+      info@weforacause.org
+    </a>
+  </p>
+
+  <p class="text-white text-sm">
+    📞 <a href="tel:+919594465856" class="hover:underline">
+      +919594465856
+    </a>
+  </p>
+
+  <!-- Social Icons -->
+  <div class="flex gap-4 mt-4">
+    <a href="https://www.instagram.com/weforacause" target="_blank" class="text-pink-500 hover:text-pink-600 transition text-xl">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.facebook.com/weforacause" class="text-blue-600 hover:text-blue-700 transition text-xl">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+   <a href="https://www.youtube.com/@weforacausefoundation" class="text-red-500 hover:text-red-600 transition text-xl">
+  <i class="fab fa-youtube"></i>
+</a>
+<a href="https://www.linkedin.com/company/we-for-a-cause-foundation" class="text-blue-500 hover:text-blue-600 transition text-xl">
+  <i class="fab fa-linkedin"></i>
+</a>
+  </div>
+</div>
+
+    <!-- Newsletter -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Newsletter</h3>
+      <form class="flex flex-col gap-2">
+        <input type="email" placeholder="Your Email" class="p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 border border-gray-700 text-gray-900">
+        <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-semibold transition">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="mt-12 border-t border-gray-800 pt-6 text-gray-500 text-sm text-center">
+    © 2026 WE FOR A CAUSE FOUNDATION. All rights reserved.
+  </div>
+</footer>
+
+
+
+<script>
+
+document.getElementById("fosterForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("successMessage").classList.remove("hidden");
+
+this.reset();
+
+});
+
+</script>
+
+
+</body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+<script>
+  const projectBtn = document.getElementById("projects-btn");
+const projectMenu = document.getElementById("projects-menu");
+
+projectBtn.addEventListener("click", () => {
+  projectMenu.classList.toggle("hidden");
+});
+  const projectToggle = document.getElementById("project-toggle");
+const projectMobile = document.getElementById("project-mobile");
+
+projectToggle.addEventListener("click", () => {
+  projectMobile.classList.toggle("hidden");
+});
+
+/* MOBILE MENU TOGGLE */
+
+const menuBtn = document.getElementById("menu-btn")
+const mobileMenu = document.getElementById("mobile-menu")
+
+menuBtn.addEventListener("click", () => {
+
+mobileMenu.classList.toggle("hidden")
+
+})
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCount = () => {
+
+const target = +counter.getAttribute('data-target');
+const count = +counter.innerText;
+
+const speed = 50;
+
+const inc = target / speed;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + inc);
+setTimeout(updateCount,30);
+
+}
+
+else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCount();
+
+});
+
+
+
+AOS.init({
+duration:1000,
+once:true
+});
+const faqButtons = document.querySelectorAll('.faq-btn');
+
+  faqButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+
+      answer.classList.toggle('hidden');
+      icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+    });
+  });
+AOS.init({
+    once: true,
+    duration: 800,
+    offset: 120,
+  });
+
+
+
+
+// CLOSE MENU WHEN SCROLL
+window.addEventListener("scroll", () => {
+mobileMenu.classList.add("hidden");
+});
+
+
+
+</script>
+</html>
+
