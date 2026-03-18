@@ -220,23 +220,35 @@ focus:ring-2 focus:ring-teal-500 outline-none">
 
 <!-- Internship Type -->
 <div>
-<label class="text-sm font-medium text-gray-700">
-Preferred Internship Role
-</label>
+  <label class="text-sm font-medium text-gray-700">
+    Preferred Internship Role
+  </label>
 
-<select
-class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-focus:ring-2 focus:ring-teal-500">
+  <select id="roleSelect"
+    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
+    focus:ring-2 focus:ring-teal-500">
 
-<option>Animal Care</option>
-<option>Social Media</option>
-<option>Fundraising</option>
-<option>Rescue Support</option>
+    <option value="">Select a role</option>
+    <option value="Animal Care">Animal Care</option>
+    <option value="Social Media">Social Media</option>
+    <option value="Fundraising">Fundraising</option>
+    <option value="Rescue Support">Rescue Support</option>
+    <option value="Other">Other</option>
 
-</select>
+  </select>
 </div>
 
+<!-- Hidden Input -->
+<div id="otherRoleField" class="mt-4 hidden">
+  <label class="text-sm font-medium text-gray-700">
+    Please specify
+  </label>
 
+  <input type="text"
+    placeholder="Enter your preferred role"
+    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
+    focus:ring-2 focus:ring-teal-500">
+</div>
 <!-- Message -->
 <div>
 <label class="text-sm font-medium text-gray-700">
@@ -276,7 +288,7 @@ Submit Application
 
     <!-- Logo & About -->
     <div>
-      <h1 class="text-2xl font-bold text-teal-400 mb-4">WE FOR A CAUSE</h1>
+      <a href="index.html"><h1 class="text-2xl font-bold text-teal-400 mb-4">WE FOR A CAUSE</h1></a>
       <p class="text-white text-sm">
         Dedicated to rescuing injured and abandoned animals, providing care, and helping them find loving homes.
       </p>
@@ -446,7 +458,16 @@ AOS.init({
 window.addEventListener("scroll", () => {
 mobileMenu.classList.add("hidden");
 });
+const roleSelect = document.getElementById("roleSelect");
+  const otherField = document.getElementById("otherRoleField");
 
+  roleSelect.addEventListener("change", function () {
+    if (this.value === "Other") {
+      otherField.classList.remove("hidden");
+    } else {
+      otherField.classList.add("hidden");
+    }
+  });
 
 
 </script>

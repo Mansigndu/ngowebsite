@@ -230,18 +230,34 @@ focus:ring-2 focus:ring-teal-500 outline-none">
 How would you like to help?
 </label>
 
-<select required
-class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-focus:ring-2 focus:ring-teal-500 text-sm md:text-base">
+<div>
+  <select id="volunteerRole"
+    required
+    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
+    focus:ring-2 focus:ring-teal-500 text-sm md:text-base">
 
-<option value="">Select Volunteer Role</option>
-<option>Animal Rescue</option>
-<option>Animal Care</option>
-<option>Social Media</option>
-<option>Fundraising</option>
+    <option value="">Select Volunteer Role</option>
+    <option value="Animal Rescue">Animal Rescue</option>
+    <option value="Animal Care">Animal Care</option>
+    <option value="Social Media">Social Media</option>
+    <option value="Fundraising">Fundraising</option>
+    <option value="Other">Other</option>
 
-</select>
+  </select>
+</div>
 
+<!-- Hidden Input -->
+<div id="otherVolunteerField" class="mt-4 hidden">
+  <label class="text-sm font-medium text-gray-700">
+    Please specify
+  </label>
+
+  <input type="text"
+    id="otherVolunteerInput"
+    placeholder="Enter your role"
+    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
+    focus:ring-2 focus:ring-teal-500 text-sm md:text-base">
+</div>
 </div>
 
 
@@ -458,6 +474,21 @@ AOS.init({
 window.addEventListener("scroll", () => {
 mobileMenu.classList.add("hidden");
 });
+
+  const volunteerRole = document.getElementById("volunteerRole");
+  const otherVolunteerField = document.getElementById("otherVolunteerField");
+  const otherVolunteerInput = document.getElementById("otherVolunteerInput");
+
+  volunteerRole.addEventListener("change", function () {
+    if (this.value === "Other") {
+      otherVolunteerField.classList.remove("hidden");
+      otherVolunteerInput.setAttribute("required", "true");
+    } else {
+      otherVolunteerField.classList.add("hidden");
+      otherVolunteerInput.removeAttribute("required");
+    }
+  });
+
 
 
 
