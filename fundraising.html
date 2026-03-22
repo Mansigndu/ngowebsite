@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fafafa;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      transition: .3s;
+    }
+
+    .paw {
+      position: absolute;
+      bottom: -40px;
+      font-size: 30px;
+      opacity: .1;
+      animation: floatPaw 15s linear infinite;
+    }
+
+    @keyframes floatPaw {
+      0% {
+        transform: translateY(0)
+      }
+
+      100% {
+        transform: translateY(-800px)
+      }
+    }
+
+    body,
+    html {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body>
+    <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
+
+    <div class="max-w-7xl mx-auto  px-6 py-3 flex justify-between items-center">
+
+      <!-- Logo -->
+      <a href="index.html">
+      <h1 class="text-xl md:text-2xl  w-[250px]  text-teal-400 flex flex-row justify-evenly items-center gap-2 font-bold ">
+          <img src="./images/doglogo.png" alt="logo" class="w-[80px] h-[70px] rounded-full ">
+        WEFORACAUSE
+      </h1></a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-8 font-medium">
+
+        <a href="./index.html" class="hover:text-teal-400 transition">Home</a>
+        <a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
+        <a href="./about.html" class="hover:text-teal-400 transition">About</a>
+        <a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
+        <a href="fundraising.html" class="hover:text-teal-400 transition">
+  Fundraising
+</a>
+        <a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
+        <a href="./internship.html" class="hover:text-teal-400 transition">Internship</a>
+        <div class="relative">
+
+          <button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
+            Projects
+            <span class="text-xs">▼</span>
+          </button>
+
+          <!-- Dropdown -->
+          <div id="projects-menu"
+            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
+
+            <a href="prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Bezuban
+            </a>
+
+            <a href="prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Paryavarana
+            </a>
+
+            <a href="womenempowerment.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Women Empowerment
+            </a>
+
+            <a href="prakalpsaath.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Saath
+            </a>
+
+            <a href="prakalpchaitanyan.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Chaitanyan
+            </a>
+
+            <a href="prakalpmahwari.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Mahwari
+            </a>
+
+          </div>
+
+        </div>
+
+        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
+
+          Donate
+
+        </a>
+
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700">
+
+      <div class="flex flex-col text-center py-6 space-y-4 font-medium">
+
+        <a href="./index.html" class="hover:text-teal-400">Home</a>
+        <a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
+        <a href="./about.html" class="hover:text-teal-400">About</a>
+        <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
+        <a href="fundraising.html" class="hover:text-teal-400 transition">
+  Fundraising
+</a>
+        <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
+        <a href="./internship.html" class="hover:text-teal-400">Internship</a>
+        <div>
+
+          <button id="project-toggle" class="w-full hover:text-teal-400">
+            Projects ▼
+          </button>
+
+          <div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
+
+            <a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
+            <a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
+            <a href="womenempowerment.html" class="hover:text-teal-400">Women Empowerment</a>
+            <a href="prakalpsaath.html" class="hover:text-teal-400">Prakalp Saath</a>
+            <a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyan</a>
+            <a href="prakalpmahwari.html" class="hover:text-teal-400">Prakalp Mahwari</a>
+          </div>
+
+        </div>
+
+        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
+
+          Donate
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+  <!-- HERO / TITLE -->
+<section class="py-20 bg-gradient-to-r from-teal-500 to-cyan-500 text-white text-center mt-20">
+  <div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+      Fundraising <span class="text-yellow-300">Appeal</span>
+    </h1>
+
+    <p class="text-lg md:text-xl opacity-90">
+      Help us give a better life to voiceless animals 🐾
+    </p>
+
+  </div>
+</section>
+
+
+<!-- MAIN CONTENT -->
+<section class="py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- IMAGE -->
+    <div data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1583511655826-05700d52f4d9"
+           alt="Rescue Dog"
+           class="rounded-2xl shadow-lg w-full h-[350px] object-cover">
+    </div>
+
+    <!-- TEXT -->
+    <div data-aos="fade-left" class="space-y-5 text-gray-700">
+
+      <p class="leading-relaxed">
+        Every day, countless stray animals suffer from hunger, injuries, and lack of medical care. 
+        Many of them silently struggle on the streets, waiting for help that often never comes.
+      </p>
+
+      <p class="leading-relaxed">
+        At <strong>We For A Cause Foundation</strong>, we are dedicated to rescuing injured animals, 
+        feeding strays, and providing them with proper medical treatment and care.
+      </p>
+
+      <p class="leading-relaxed">
+        However, this mission requires continuous support. From food and shelter to life-saving treatments, 
+        every effort needs resources.
+      </p>
+
+      <p class="leading-relaxed font-medium text-gray-800">
+        Your contribution can help us save lives. Even a small donation can make a big difference.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- IMPACT STATS (NEW - attractive) -->
+<section class="py-16 bg-gray-100 text-center">
+  <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+
+    <div class="bg-white p-6 rounded-xl shadow-md" data-aos="zoom-in">
+      <h3 class="text-3xl font-bold text-teal-500">500+</h3>
+      <p class="text-gray-600 mt-2">Animals Rescued</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="text-3xl font-bold text-teal-500">1000+</h3>
+      <p class="text-gray-600 mt-2">Animals Fed Daily</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="text-3xl font-bold text-teal-500">5+</h3>
+      <p class="text-gray-600 mt-2">Cities Covered</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-md" data-aos="zoom-in" data-aos-delay="300">
+      <h3 class="text-3xl font-bold text-teal-500">100%</h3>
+      <p class="text-gray-600 mt-2">Dedication</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CTA SECTION -->
+<section class="py-20 bg-gradient-to-r from-teal-600 to-cyan-600 text-white text-center">
+  <div class="max-w-3xl mx-auto px-6" data-aos="fade-up">
+
+    <h2 class="text-4xl font-bold mb-4">
+      Be Their Voice 🐾
+    </h2>
+
+    <p class="mb-8 text-lg opacity-90">
+      Support our mission and help us provide food, shelter, and medical care to animals in need.
+    </p>
+
+    <a href="donationform.html"
+      class="bg-white text-teal-600 px-10 py-3 rounded-full font-semibold text-lg hover:scale-105 transition shadow-lg">
+      Donate Now ❤️
+    </a>
+
+  </div>
+</section>
+   <!-- FOOTER -->
+
+  <footer class="bg-gray-900 text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+
+      <!-- Logo & About -->
+      <div>
+       <a href="index.html"><h1 class="text-2xl font-bold text-teal-400 mb-4">WEFORACAUSE</h1></a>
+        <p class="text-white text-sm">
+          Dedicated to rescuing injured and abandoned animals, providing care, and helping them find loving homes.
+        </p>
+        <p class="mt-4 text-white italic text-sm">
+          "Every life matters. Make a difference today!"
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+<div>
+  <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+
+  <!-- Small helper text (professional touch) -->
+  <p class="text-sm text-white mb-3">
+    Support us through donations or essential items
+  </p>
+
+  <ul class="space-y-2 text-white">
+
+    <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
+    <li><a href="about.html" class="hover:text-teal-400 transition">About</a></li>
+    <li><a href="adopt.html" class="hover:text-teal-400 transition">Adopt</a></li>
+    <li><a href="volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a></li>
+    <li><a href="internship.html" class="hover:text-teal-400 transition">Internship</a></li>
+
+    <!-- Donate (already exists) -->
+    <li><a href="donationform.html" class="hover:text-teal-400 transition">Donate</a></li>
+
+    <!-- Amazon Wishlist (NEW - highlighted but balanced) -->
+    <li>
+      <a href="https://www.amazon.in/hz/wishlist/ls/XXXX"
+      class="flex items-center justify-between bg-pink-500 hover:bg-pink-600  text-white px-4 py-2 rounded-lg transition mt-2">
+        
+        <span class="flex items-center gap-2">
+          <i class="ri-amazon-fill text-lg"></i>
+          Donate via Amazon Wishlist
+        </span>
+
+        <i class="ri-external-link-line"></i>
+
+      </a>
+    </li>
+
+  </ul>
+</div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
+
+        <p class="text-white text-sm">
+          📍 Shiv Tekdi, Shiv Ratan Marg, Kisan Nagar 3, Kisan Nagar, Thane West, Thane, Maharashtra 400604
+        </p>
+
+        <p class="text-white text-sm">
+          📧 <a href="mailto:info@weforacause.org" class="hover:underline">
+            info@weforacause.org
+          </a>
+        </p>
+
+        <p class="text-white text-sm">
+          📞 <a href="tel:+919594465856" class="hover:underline">
+            +919594465856
+          </a>
+        </p>
+
+        <!-- Social Icons -->
+        <div class="flex gap-4 mt-4">
+          <a href="https://www.instagram.com/weforacause" target="_blank"
+            class="text-pink-500 hover:text-pink-600 transition text-xl">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/weforacause" class="text-blue-600 hover:text-blue-700 transition text-xl">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@weforacausefoundation"
+            class="text-red-500 hover:text-red-600 transition text-xl">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/we-for-a-cause-foundation"
+            class="text-blue-500 hover:text-blue-600 transition text-xl">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h3 class="text-lg font-semibold text-white mb-4">Newsletter</h3>
+        <form class="flex flex-col gap-2">
+          <input type="email" placeholder="Your Email"
+            class="p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 border border-gray-700 text-gray-900">
+          <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-semibold transition">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-12 border-t border-gray-800 pt-6 text-gray-500 text-sm text-center">
+      © 2026 WE FOR A CAUSE FOUNDATION. All rights reserved.
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+<script>
+  const projectBtn = document.getElementById("projects-btn");
+  const projectMenu = document.getElementById("projects-menu");
+
+  projectBtn.addEventListener("click", () => {
+    projectMenu.classList.toggle("hidden");
+  });
+  const projectToggle = document.getElementById("project-toggle");
+  const projectMobile = document.getElementById("project-mobile");
+
+  projectToggle.addEventListener("click", () => {
+    projectMobile.classList.toggle("hidden");
+  });
+
+  /* MOBILE MENU TOGGLE */
+
+  const menuBtn = document.getElementById("menu-btn")
+  const mobileMenu = document.getElementById("mobile-menu")
+
+  menuBtn.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("hidden")
+
+  })
+
+  const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+
+    const updateCount = () => {
+
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+
+      const speed = 50;
+
+      const inc = target / speed;
+
+      if (count < target) {
+
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 30);
+
+      }
+
+      else {
+
+        counter.innerText = target;
+
+      }
+
+    };
+
+    updateCount();
+
+  });
+
+
+
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+  const faqButtons = document.querySelectorAll('.faq-btn');
+
+  faqButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+
+      answer.classList.toggle('hidden');
+      icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+    });
+  });
+  AOS.init({
+    once: true,
+    duration: 800,
+    offset: 120,
+  });
+
+
+
+
+  // CLOSE MENU WHEN SCROLL
+  window.addEventListener("scroll", () => {
+    mobileMenu.classList.add("hidden");
+  });
+
+
+
+</script>
+    
+</body>
+</html>
