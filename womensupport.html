@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Support | We For A Cause</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <style>
-  body,html{
-    overflow-x: hidden;
-  }
+    body,html{
+        overflow-x: hidden;
+    }
 </style>
-<body>
-   <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
+
+<body class="bg-slate-100">
+     <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
 
     <div class="max-w-7xl mx-auto  px-6 py-3 flex justify-between items-center">
 
@@ -163,132 +170,89 @@
 
   </nav>
 
-<!-- Banner Image -->
-<section class="py-10 sm:py-14 md:py-20 bg-gray-100">
+<!-- HEADER -->
+<section class="bg-slate-700 text-white py-16 text-center">
+  <h1 class="text-3xl mt-20 md:text-5xl font-bold mb-4">
+    Women Support & <span class="text-teal-500">Empowerment</span> 
+  </h1>
+  <p class="max-w-2xl mx-auto text-gray-300">
+    We are here to support women through safety guidance, self-defense training, and awareness campaigns. You are not alone.
+  </p>
+</section>
 
-<div class="max-w-7xl mt-20 mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+<!-- FORM SECTION -->
+<section class="py-16 px-6 bg-slate-100">
+  <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl" data-aos="fade-up">
 
-<!-- IMAGE -->
-<div data-aos="fade-right" class="order-1">
-  <img src="./images/awarenessess.png"
-       class="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[420px] object-cover rounded-xl shadow-md">
-</div>
+    <h2 class="text-3xl font-bold text-center text-teal-600 mb-4">
+      Connect With Us 💬
+    </h2>
 
-<!-- TEXT -->
-<div data-aos="fade-left" class="order-2 text-center md:text-left">
+    <p class="text-center text-gray-600 mb-10">
+      Need help, want to learn self-defense, or join our awareness campaigns?  
+      Fill the form below — we are here for you.
+    </p>
 
-<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 leading-tight">
-Prakalp <span class="text-teal-500">Chaitanyam</span>
-</h1>
+    <!-- FORM -->
+    <form id="supportForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-<p class="text-sm sm:text-base md:text-lg text-gray-600 mb-4 leading-relaxed max-w-xl mx-auto md:mx-0">
-Prakalp Chaitanyam is an initiative focused on spreading awareness and creating positive change in society.
-</p>
+      <input type="text" placeholder="Your Name" required
+        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
 
-<p class="text-sm sm:text-base md:text-lg text-gray-600 mb-4 leading-relaxed max-w-xl mx-auto md:mx-0">
-We educate communities about health, hygiene, environment, and animal welfare through active engagement.
-</p>
+      <input type="tel" placeholder="Phone Number" required
+        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
 
-<p class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto md:mx-0">
-Join us every Sunday and be part of meaningful change.
-</p>
+      <input type="email" placeholder="Email Address" required
+        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
 
-<a href="volunteerform.html"
-class="inline-block mt-6 bg-teal-600 text-white px-6 py-2.5 rounded-lg text-sm sm:text-base hover:bg-teal-700 transition">
-Join as Volunteer
-</a>
+      <select required
+        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
+        <option value="">Select Purpose</option>
+        <option>Women Safety / Help</option>
+        <option>Self Defense Training</option>
+        <option>Join Awareness Campaign</option>
+      </select>
 
-</div>
+      <textarea placeholder="Describe your concern or interest..." required
+        class="md:col-span-2 border p-3 rounded-lg h-32 focus:ring-2 focus:ring-teal-400 outline-none"></textarea>
 
-</div>
+      <button
+        class="md:col-span-2 bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-lg font-semibold transition">
+        Submit
+      </button>
 
+    </form>
+
+  </div>
 </section>
 
 
 
-<!-- WHAT WE DO SECTION -->
+<!-- SUCCESS POPUP -->
+<div id="successModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
 
-<section class="py-16 sm:py-20 md:py-24 bg-white">
+  <div class="bg-white p-8 rounded-2xl shadow-2xl text-center max-w-sm w-full animate-bounce">
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <h3 class="text-2xl font-bold text-teal-600 mb-3">
+      Thank You 💜
+    </h3>
 
-<!-- Heading -->
-<div class="text-center mb-12 md:mb-16">
+    <p class="text-gray-600 mb-6">
+      Your response has been submitted successfully.  
+      We will contact you soon.
+    </p>
 
-<h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-800 mb-4">
-What <span class="text-teal-500">We Do</span>
-</h2>
+    <button onclick="closeModal()"
+      class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg">
+      Close
+    </button>
 
-<p class="text-gray-600 text-sm sm:text-base max-w-xl mx-auto">
-Our initiatives focus on creating awareness, empowering communities,
-and supporting animal welfare through meaningful social action.
-</p>
-
-</div>
-
-<!-- Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-
-<!-- Card 1 -->
-<div class="bg-[#FAF7F2] p-8 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 hover:-translate-y-2 text-center">
-
-<i class="ri-team-line text-3xl text-teal-500 mb-4"></i>
-
-<h3 class="text-4xl font-bold text-teal-500 mb-3">01</h3>
-
-<p class="font-semibold text-gray-800 uppercase tracking-wide text-sm">
-Represent Us
-</p>
+  </div>
 
 </div>
 
-<!-- Card 2 -->
-<div class="bg-[#FAF7F2] p-8 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 hover:-translate-y-2 text-center">
-
-<i class="ri-user-heart-line text-3xl text-teal-500 mb-4"></i>
-
-<h3 class="text-4xl font-bold text-teal-500 mb-3">02</h3>
-
-<p class="font-semibold text-gray-800 uppercase tracking-wide text-sm">
-Meri Pehchaan
-</p>
-
-</div>
-
-<!-- Card 3 -->
-<div class="bg-[#FAF7F2] p-8 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 hover:-translate-y-2 text-center">
-
-<i class="ri-presentation-line text-3xl text-teal-500 mb-4"></i>
-
-<h3 class="text-4xl font-bold text-teal-500 mb-3">03</h3>
-
-<p class="font-semibold text-gray-800 uppercase tracking-wide text-sm">
-Arrange Workshop
-</p>
-
-</div>
-
-<!-- Card 4 -->
-<div class="bg-[#FAF7F2] p-8 rounded-2xl shadow-sm hover:shadow-lg transition duration-300 hover:-translate-y-2 text-center">
-
-<i class="ri-hand-heart-line text-3xl text-teal-500 mb-4"></i>
-
-<h3 class="text-4xl font-bold text-teal-500 mb-3">04</h3>
-
-<a href="donationform.html"
-class="font-semibold text-gray-800 uppercase tracking-wide text-sm hover:text-teal-600 transition">
-Donate
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
- <footer class="bg-gray-900 text-gray-300 py-16">
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 py-16">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
 
     <!-- Logo & About -->
@@ -302,12 +266,12 @@ Donate
       </p>
     </div>
 
-     <!-- Quick Links -->
+    <!-- Quick Links -->
 <div>
   <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
 
   <!-- Small helper text (professional touch) -->
-  <p class="text-sm text-gray-400 mb-3">
+  <p class="text-sm text-white mb-3">
     Support us through donations or essential items
   </p>
 
@@ -339,6 +303,7 @@ Donate
 
   </ul>
 </div>
+
     <!-- Contact Info -->
    <div>
   <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
@@ -396,73 +361,63 @@ Donate
     © 2026 WE FOR A CAUSE FOUNDATION. All rights reserved.
   </div>
 </footer>
+
+<!-- AOS Script -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-
 <script>
   const projectBtn = document.getElementById("projects-btn");
-const projectMenu = document.getElementById("projects-menu");
+  const projectMenu = document.getElementById("projects-menu");
 
-projectBtn.addEventListener("click", () => {
-  projectMenu.classList.toggle("hidden");
-});
+  projectBtn.addEventListener("click", () => {
+    projectMenu.classList.toggle("hidden");
+  });
   const projectToggle = document.getElementById("project-toggle");
-const projectMobile = document.getElementById("project-mobile");
+  const projectMobile = document.getElementById("project-mobile");
 
-projectToggle.addEventListener("click", () => {
-  projectMobile.classList.toggle("hidden");
-});
+  projectToggle.addEventListener("click", () => {
+    projectMobile.classList.toggle("hidden");
+  });
 
-/* MOBILE MENU TOGGLE */
+  /* MOBILE MENU TOGGLE */
 
-const menuBtn = document.getElementById("menu-btn")
-const mobileMenu = document.getElementById("mobile-menu")
+  const menuBtn = document.getElementById("menu-btn")
+  const mobileMenu = document.getElementById("mobile-menu")
 
-menuBtn.addEventListener("click", () => {
+  menuBtn.addEventListener("click", () => {
 
-mobileMenu.classList.toggle("hidden")
+    mobileMenu.classList.toggle("hidden")
 
-})
+  })
 
-const counters = document.querySelectorAll('.counter');
+  
+  const counters = document.querySelectorAll('.counter');
 
-counters.forEach(counter => {
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText.replace('+', '');
 
-const updateCount = () => {
+      const increment = target / 100;
 
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment) + "+";
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target + "+";
+      }
+    };
 
-const speed = 50;
-
-const inc = target / speed;
-
-if(count < target){
-
-counter.innerText = Math.ceil(count + inc);
-setTimeout(updateCount,30);
-
-}
-
-else{
-
-counter.innerText = target;
-
-}
-
-};
-
-updateCount();
-
-});
+    updateCount();
+  });
 
 
 
-AOS.init({
-duration:1000,
-once:true
-});
-const faqButtons = document.querySelectorAll('.faq-btn');
+
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+  const faqButtons = document.querySelectorAll('.faq-btn');
 
   faqButtons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -473,7 +428,7 @@ const faqButtons = document.querySelectorAll('.faq-btn');
       icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
     });
   });
-AOS.init({
+  AOS.init({
     once: true,
     duration: 800,
     offset: 120,
@@ -482,13 +437,30 @@ AOS.init({
 
 
 
-// CLOSE MENU WHEN SCROLL
-window.addEventListener("scroll", () => {
-mobileMenu.classList.add("hidden");
-});
+  // CLOSE MENU WHEN SCROLL
+  window.addEventListener("scroll", () => {
+    mobileMenu.classList.add("hidden");
+  });
 
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 
+  const form = document.getElementById("supportForm");
+  const modal = document.getElementById("successModal");
 
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    form.reset();
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  });
+
+  function closeModal() {
+    modal.classList.add("hidden");
+  }
 </script>
 
 </body>

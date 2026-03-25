@@ -27,141 +27,161 @@
 
 <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
 
-<div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto  px-6 py-3 flex justify-between items-center">
 
-<!-- Logo -->
-<a href="index.html">
+      <!-- Logo -->
+      <a href="index.html">
       <h1 class="text-xl md:text-2xl  w-[250px]  text-teal-400 flex flex-row justify-evenly items-center gap-2 font-bold ">
           <img src="./images/doglogo.png" alt="logo" class="w-[80px] h-[70px] rounded-full ">
         WEFORACAUSE
       </h1></a>
 
-<!-- Desktop Menu -->
-<div class="hidden md:flex items-center gap-8 font-medium">
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-6 list-none font-medium">
 
-<a href="./index.html" class="hover:text-teal-400 transition">Home</a>
-<a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
-<a href="./about.html" class="hover:text-teal-400 transition">About</a>
-<a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
-<a href="fundraising.html" class="hover:text-teal-400 transition">
+        <a href="./index.html" class="hover:text-teal-400 transition">Home</a>
+        <a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
+        <a href="./about.html" class="hover:text-teal-400 transition">About</a>
+        <a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
+        <a href="fundraising.html" class="hover:text-teal-400 transition">
   Fundraising
 </a>
-<a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
-<a href="./internship.html" class="hover:text-teal-400">Internship</a>
-<div class="relative">
+        <a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
+        <a href="./internship.html" class="hover:text-teal-400 transition">Internship</a>
+        <li>
+  <a href="https://www.amazon.in/hz/wishlist/ls/YOUR_WISHLIST_ID" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="flex items-center gap-2  hover:text-teal-400 transition font-medium">
+    
+    <i class="ri-amazon-fill text-lg"></i>
+    Donate
 
-<button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
-Projects
-<span class="text-xs">▼</span>
-</button>
+  </a>
+</li>
+        <div class="relative">
 
-<!-- Dropdown -->
-<div id="projects-menu" class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
+          <button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
+            Projects
+            <span class="text-xs">▼</span>
+          </button>
 
-<a href="prakalpbezuban.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Bezuban
-</a>
+          <!-- Dropdown -->
+          <div id="projects-menu"
+            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
 
-<a href="prakalpparyavarana.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Paryavarana
-</a>
+            <a href="prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Bezuban
+            </a>
 
-<a href="womenempowerment.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Women Empowerment
-</a>
+            <a href="prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Paryavarana
+            </a>
 
-<a href="prakalpsaath.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Saath
-</a>
+            <a href="womenempowerment.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Naari Shakti
+            </a>
 
-<a href="prakalpchaitanyan.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Chaitanyan
-</a>
+            <a href="prakalpsaath.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Saath
+            </a>
 
-<a href="prakalpmahwari.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Mahwari
-</a>
+            <a href="prakalpchaitanyan.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Chaitanyam
+            </a>
 
-</div>
+            <a href="prakalpmahwari.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Mahwari
+            </a>
 
-</div>
+          </div>
 
-<a href="./donationform.html"
-class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
+        </div>
 
-Donate
+        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
 
-</a>
+          Donate
 
-</div>
+        </a>
 
-<!-- Mobile Button -->
-<button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
-☰
-</button>
+      </div>
 
-</div>
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+        ☰
+      </button>
 
-<!-- Mobile Menu -->
-<div id="mobile-menu"
-class="hidden md:hidden bg-slate-900 border-t border-slate-700">
+    </div>
 
-<div class="flex flex-col text-center py-6 space-y-4 font-medium">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700">
 
-<a href="./index.html" class="hover:text-teal-400">Home</a>
-<a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
-<a href="./about.html" class="hover:text-teal-400">About</a>
-<a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
-<a href="fundraising.html" class="hover:text-teal-400 transition">
+      <div class="flex flex-col text-center py-6 space-y-4 font-medium">
+
+        <a href="./index.html" class="hover:text-teal-400">Home</a>
+        <a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
+        <a href="./about.html" class="hover:text-teal-400">About</a>
+        <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
+        <a href="fundraising.html" class="hover:text-teal-400 transition">
   Fundraising
 </a>
-<a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
-<a href="./internship.html" class="hover:text-teal-400">Internship</a>
-<div>
+        <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
+        <a href="./internship.html" class="hover:text-teal-400">Internship</a>
+        <li>
+  <a href="https://www.amazon.in/hz/wishlist/ls/YOUR_WISHLIST_ID" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class=" hover:text-teal-400">
+    
+    <i class="ri-amazon-fill text-lg"></i>
+    Donate
 
-<button id="project-toggle" class="w-full hover:text-teal-400">
-Projects ▼
-</button>
+  </a>
+</li>
+        <div>
 
-<div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
+          <button id="project-toggle" class="w-full hover:text-teal-400">
+            Projects ▼
+          </button>
 
-<a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
-<a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
-<a href="womenempowerment.html" class="hover:text-teal-400">Women Empowerment</a>
-<a href="prakalpsaath.html" class="hover:text-teal-400">Prakalp Saath</a>
-<a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyan</a>
-<a href="prakalpmahwari.html" class="hover:text-teal-400">Prakalp Mahwari</a>
-</div>
+          <div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
 
-</div>
+            <a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
+            <a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
+            <a href="womenempowerment.html" class="hover:text-teal-400">Naari Shakti</a>
+            <a href="prakalpsaath.html" class="hover:text-teal-400">Prakalp Saath</a>
+            <a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyam</a>
+            <a href="prakalpmahwari.html" class="hover:text-teal-400">Prakalp Mahwari</a>
+          </div>
 
-<a href="./donationform.html"
-class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
+        </div>
 
-Donate
+        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
 
-</a>
+          Donate
 
-</div>
+        </a>
+        
 
-</div>
+      </div>
 
-</nav>
+    </div>
+
+  </nav>
 
   <!-- DONATION FORM SECTION -->
-  <section id="donate-form" class="py-24 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-6">
-      <!-- Form Header -->
-      <div class="text-center mb-12" data-aos="fade-down">
-        <h2 class="text-4xl md:text-5xl font-bold text-teal-600 mt-10 mb-3">Donate Now</h2>
-        <p class="text-gray-600 md:text-lg">Your contribution helps rescue and care for dogs and cats in need.</p>
-      </div>
+  <!-- DONATION SECTION -->
+<section id="donate-form" class="py-24 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-12" data-aos="fade-down">
+      <h2 class="text-4xl md:text-5xl font-bold text-teal-600 mt-10 mb-3">Donate Now</h2>
+      <p class="text-gray-600 md:text-lg">
+        Your contribution helps rescue and care for animals in need.
+      </p>
+    </div>
+  
 
       <!-- Form -->
       <form class="bg-white p-8 md:p-12 rounded-2xl shadow-lg grid gap-6"
@@ -219,10 +239,44 @@ class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:rin
 
         <!-- Donation Amount -->
         <label class="w-full">
-          <span class="text-gray-700 font-medium">Donation Amount (₹) <span class="text-red-500">*</span></span>
-          <input type="number" name="amount" placeholder="Enter donation amount" required min="1"
-                 class="w-full border border-gray-300 p-3 rounded-lg mt-1 focus:ring-2 focus:ring-teal-400 focus:outline-none">
-        </label>
+
+  <span class="text-gray-700 font-medium">
+    Donation Amount (₹) <span class="text-red-500">*</span>
+  </span>
+
+  <!-- PRESET BUTTONS -->
+  <div class="flex gap-3 mt-3 flex-wrap">
+
+    <button type="button" onclick="setAmount(100)"
+      class="amount-btn px-4 py-2 border rounded-lg hover:bg-teal-500 hover:text-white transition">
+      ₹100
+    </button>
+
+    <button type="button" onclick="setAmount(500)"
+      class="amount-btn px-4 py-2 border rounded-lg hover:bg-teal-500 hover:text-white transition">
+      ₹500
+    </button>
+
+    <button type="button" onclick="setAmount(1000)"
+      class="amount-btn px-4 py-2 border rounded-lg hover:bg-teal-500 hover:text-white transition">
+      ₹1000
+    </button>
+
+    <button type="button" onclick="setAmount(2000)"
+      class="amount-btn px-4 py-2 border rounded-lg hover:bg-teal-500 hover:text-white transition">
+      ₹2000
+    </button>
+
+  </div>
+
+  <!-- CUSTOM INPUT -->
+  <input type="number" id="amountInput" name="amount"
+    placeholder="Or enter custom amount"
+    required
+    class="w-full border border-gray-300 p-3 rounded-lg mt-4 focus:ring-2 focus:ring-teal-400 outline-none">
+
+</label>
+
 
         <!-- Message -->
         <label class="w-full">
@@ -240,8 +294,76 @@ class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:rin
         </div>
 
       </form>
+    
+
+    <!-- OR -->
+    <div class="text-center my-12">
+      <p class="text-gray-500">OR</p>
     </div>
-  </section>
+
+    <!-- DIRECT DONATION -->
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- UPI -->
+      <div class="bg-white p-6 rounded-2xl shadow text-center">
+        <h3 class="text-xl font-semibold text-teal-600 mb-4">
+          Scan & Donate 📲
+        </h3>
+
+        <img src="./images/scanner.jpeg"
+             class="w-56 mx-auto mb-4 rounded-lg shadow">
+
+        <p class="text-gray-700 text-sm">
+          UPI ID: <span class="font-semibold text-teal-600">9594465856@ptsbi</span>
+        </p>
+
+        <p class="text-xs text-gray-500 mt-2">
+          No PAN required for direct donation
+        </p>
+      </div>
+
+      <!-- BANK -->
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold text-teal-600 mb-4 text-center">
+          Bank Transfer 🏦
+        </h3>
+
+        <p><strong>Account Name:</strong> We For A Cause Foundation</p>
+        <p><strong>Account Number:</strong> XXXXXXXX</p>
+        <p><strong>IFSC Code:</strong> XXXXXXXX</p>
+        <p><strong>Bank Name:</strong> XXXXXXXX</p>
+
+        <p class="text-xs text-gray-500 mt-4 text-center">
+          Direct bank transfer also accepted
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SUCCESS POPUP -->
+<div id="donateSuccess" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+  <div class="bg-white p-8 rounded-2xl shadow-2xl text-center max-w-sm w-full">
+
+    <h3 class="text-2xl font-bold text-teal-600 mb-3">
+      Thank You 💖
+    </h3>
+
+    <p class="text-gray-600 mb-6">
+      Your donation request has been submitted successfully.
+    </p>
+
+    <button onclick="closeDonateModal()"
+      class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg">
+      Close
+    </button>
+
+  </div>
+</div>
+
+
   <footer class="bg-gray-900 text-gray-300 py-16">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
 
@@ -261,7 +383,7 @@ class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:rin
   <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
 
   <!-- Small helper text (professional touch) -->
-  <p class="text-sm text-gray-400 mb-3">
+  <p class="text-sm text-white mb-3">
     Support us through donations or essential items
   </p>
 
@@ -456,6 +578,25 @@ const faqButtons = document.querySelectorAll('.faq-btn');
 window.addEventListener("scroll", () => {
 mobileMenu.classList.add("hidden");
 });
+
+  const donateForm = document.getElementById("donationForm");
+  const donateModal = document.getElementById("donateSuccess");
+
+  donateForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    donateForm.reset();
+    donateModal.classList.remove("hidden");
+    donateModal.classList.add("flex");
+  });
+
+  function closeDonateModal() {
+    donateModal.classList.add("hidden");
+  }
+  function setAmount(value) {
+    document.getElementById("amountInput").value = value;
+  }
+
 
     
   </script>

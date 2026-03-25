@@ -74,7 +74,7 @@
       </h1></a>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center gap-8 font-medium">
+      <div class="hidden md:flex items-center gap-6 list-none font-medium">
 
         <a href="./index.html" class="hover:text-teal-400 transition">Home</a>
         <a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
@@ -85,6 +85,17 @@
 </a>
         <a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
         <a href="./internship.html" class="hover:text-teal-400 transition">Internship</a>
+        <li>
+  <a href="https://www.amazon.in/hz/wishlist/ls/YOUR_WISHLIST_ID" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="flex items-center gap-2  hover:text-teal-400 transition font-medium">
+    
+    <i class="ri-amazon-fill text-lg"></i>
+    Donate
+
+  </a>
+</li>
         <div class="relative">
 
           <button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
@@ -105,7 +116,7 @@
             </a>
 
             <a href="womenempowerment.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Women Empowerment
+              Naari Shakti
             </a>
 
             <a href="prakalpsaath.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
@@ -113,7 +124,7 @@
             </a>
 
             <a href="prakalpchaitanyan.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Prakalp Chaitanyan
+              Prakalp Chaitanyam
             </a>
 
             <a href="prakalpmahwari.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
@@ -153,6 +164,17 @@
 </a>
         <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
         <a href="./internship.html" class="hover:text-teal-400">Internship</a>
+        <li>
+  <a href="https://www.amazon.in/hz/wishlist/ls/YOUR_WISHLIST_ID" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class=" hover:text-teal-400">
+    
+    <i class="ri-amazon-fill text-lg"></i>
+    Donate
+
+  </a>
+</li>
         <div>
 
           <button id="project-toggle" class="w-full hover:text-teal-400">
@@ -163,9 +185,9 @@
 
             <a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
             <a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
-            <a href="womenempowerment.html" class="hover:text-teal-400">Women Empowerment</a>
+            <a href="womenempowerment.html" class="hover:text-teal-400">Naari Shakti</a>
             <a href="prakalpsaath.html" class="hover:text-teal-400">Prakalp Saath</a>
-            <a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyan</a>
+            <a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyam</a>
             <a href="prakalpmahwari.html" class="hover:text-teal-400">Prakalp Mahwari</a>
           </div>
 
@@ -176,6 +198,7 @@
           Donate
 
         </a>
+        
 
       </div>
 
@@ -223,31 +246,27 @@
 
       </div>
 
-      <!-- Rescue Numbers -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+  <div>
+    <h3 class="text-3xl font-bold text-teal-400 counter" data-target="150">0+</h3>
+    <p class="text-gray-200 text-sm mt-1">Animals Rescued</p>
+  </div>
 
-        <div>
-          <h3 class="text-3xl font-bold text-teal-400 counter" data-target="150">0</h3>
-          <p class="text-gray-200 text-sm mt-1">Animals Rescued</p>
-        </div>
+  <div>
+    <h3 class="text-3xl font-bold text-teal-400 counter" data-target="1000">0+</h3>
+    <p class="text-gray-200 text-sm mt-1">Animals Treated</p>
+  </div>
 
-        <div>
-          <h3 class="text-3xl font-bold text-teal-400 counter" data-target="300">0</h3>
-          <p class="text-gray-200 text-sm mt-1">Animals Treated</p>
-        </div>
+  <div>
+    <h3 class="text-3xl font-bold text-teal-400 counter" data-target="80">0+</h3>
+    <p class="text-gray-200 text-sm mt-1">Adopted</p>
+  </div>
 
-        <div>
-          <h3 class="text-3xl font-bold text-teal-400 counter" data-target="80">0</h3>
-          <p class="text-gray-200 text-sm mt-1">Adopted</p>
-        </div>
-
-        <div>
-          <h3 class="text-3xl font-bold text-teal-400 counter" data-target="50">0</h3>
-          <p class="text-gray-200 text-sm mt-1">Volunteers</p>
-        </div>
-
-      </div>
-
+  <div>
+    <h3 class="text-3xl font-bold text-teal-400 counter" data-target="50">0+</h3>
+    <p class="text-gray-200 text-sm mt-1">Volunteers</p>
+  </div>
+</div>
     </div>
 
   </section>
@@ -990,37 +1009,27 @@
 
   })
 
+  
   const counters = document.querySelectorAll('.counter');
 
   counters.forEach(counter => {
-
     const updateCount = () => {
-
       const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
+      const count = +counter.innerText.replace('+', '');
 
-      const speed = 50;
-
-      const inc = target / speed;
+      const increment = target / 100;
 
       if (count < target) {
-
-        counter.innerText = Math.ceil(count + inc);
-        setTimeout(updateCount, 30);
-
+        counter.innerText = Math.ceil(count + increment) + "+";
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target + "+";
       }
-
-      else {
-
-        counter.innerText = target;
-
-      }
-
     };
 
     updateCount();
-
   });
+
 
 
 

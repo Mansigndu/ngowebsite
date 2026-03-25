@@ -32,132 +32,147 @@
 
 <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
 
-<div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto  px-6 py-3 flex justify-between items-center">
 
-<!-- Logo -->
-<a href="index.html">
+      <!-- Logo -->
+      <a href="index.html">
       <h1 class="text-xl md:text-2xl  w-[250px]  text-teal-400 flex flex-row justify-evenly items-center gap-2 font-bold ">
           <img src="./images/doglogo.png" alt="logo" class="w-[80px] h-[70px] rounded-full ">
         WEFORACAUSE
       </h1></a>
 
-<!-- Desktop Menu -->
-<div class="hidden md:flex items-center gap-8 font-medium">
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-6 list-none font-medium">
 
-<a href="./index.html" class="hover:text-teal-400 transition">Home</a>
-<a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
-<a href="./about.html" class="hover:text-teal-400 transition">About</a>
-<a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
-<a href="fundraising.html" class="hover:text-teal-400 transition">
+        <a href="./index.html" class="hover:text-teal-400 transition">Home</a>
+        <a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
+        <a href="./about.html" class="hover:text-teal-400 transition">About</a>
+        <a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
+        <a href="fundraising.html" class="hover:text-teal-400 transition">
   Fundraising
 </a>
-<a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
-<a href="./internship.html" class="hover:text-teal-400">Internship</a>
-<div class="relative">
+        <a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
+        <a href="./internship.html" class="hover:text-teal-400 transition">Internship</a>
+        <li>
+  <a href="https://www.amazon.in/hz/wishlist/ls/YOUR_WISHLIST_ID" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class="flex items-center gap-2  hover:text-teal-400 transition font-medium">
+    
+    <i class="ri-amazon-fill text-lg"></i>
+    Donate
 
-<button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
-Projects
-<span class="text-xs">▼</span>
-</button>
+  </a>
+</li>
+        <div class="relative">
 
-<!-- Dropdown -->
-<div id="projects-menu" class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
+          <button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
+            Projects
+            <span class="text-xs">▼</span>
+          </button>
 
-<a href="prakalpbezuban.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Bezuban
-</a>
+          <!-- Dropdown -->
+          <div id="projects-menu"
+            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
 
-<a href="prakalpparyavarana.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Paryavarana
-</a>
+            <a href="prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Bezuban
+            </a>
 
-<a href="womenempowerment.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Women Empowerment
-</a>
+            <a href="prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Paryavarana
+            </a>
 
-<a href="prakalpsaath.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Saath
-</a>
+            <a href="womenempowerment.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+            Naari Shakti
+            </a>
 
-<a href="prakalpchaitanyan.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Chaitanyan
-</a>
+            <a href="prakalpsaath.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Saath
+            </a>
 
-<a href="prakalpmahwari.html" 
-class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-Prakalp Mahwari
-</a>
+            <a href="prakalpchaitanyan.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Chaitanyam
+            </a>
 
-</div>
+            <a href="prakalpmahwari.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
+              Prakalp Mahwari
+            </a>
 
-</div>
+          </div>
 
-<a href="./donationform.html"
-class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
+        </div>
 
-Donate
+        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
 
-</a>
+          Donate
 
-</div>
+        </a>
 
-<!-- Mobile Button -->
-<button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
-☰
-</button>
+      </div>
 
-</div>
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+        ☰
+      </button>
 
-<!-- Mobile Menu -->
-<div id="mobile-menu"
-class="hidden md:hidden bg-slate-900 border-t border-slate-700">
+    </div>
 
-<div class="flex flex-col text-center py-6 space-y-4 font-medium">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700">
 
-<a href="./index.html" class="hover:text-teal-400">Home</a>
-<a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
-<a href="./about.html" class="hover:text-teal-400">About</a>
-<a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
-<a href="fundraising.html" class="hover:text-teal-400 transition">
+      <div class="flex flex-col text-center py-6 space-y-4 font-medium">
+
+        <a href="./index.html" class="hover:text-teal-400">Home</a>
+        <a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
+        <a href="./about.html" class="hover:text-teal-400">About</a>
+        <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
+        <a href="fundraising.html" class="hover:text-teal-400 transition">
   Fundraising
 </a>
-<a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
-<a href="./internship.html" class="hover:text-teal-400">Internship</a>
-<div>
+        <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
+        <a href="./internship.html" class="hover:text-teal-400">Internship</a>
+        <li>
+  <a href="https://www.amazon.in/hz/wishlist/ls/YOUR_WISHLIST_ID" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     class=" hover:text-teal-400">
+    
+    <i class="ri-amazon-fill text-lg"></i>
+    Donate
 
-<button id="project-toggle" class="w-full hover:text-teal-400">
-Projects ▼
-</button>
+  </a>
+</li>
+        <div>
 
-<div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
+          <button id="project-toggle" class="w-full hover:text-teal-400">
+            Projects ▼
+          </button>
 
-<a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
-<a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
-<a href="womenempowerment.html" class="hover:text-teal-400">Women Empowerment</a>
-<a href="prakalpsaath.html" class="hover:text-teal-400">Prakalp Saath</a>
-<a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyan</a>
-<a href="prakalpmahwari.html" class="hover:text-teal-400">Prakalp Mahwari</a>
-</div>
+          <div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
 
-</div>
+            <a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
+            <a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
+            <a href="womenempowerment.html" class="hover:text-teal-400">Naari Shakti</a>
+            <a href="prakalpsaath.html" class="hover:text-teal-400">Prakalp Saath</a>
+            <a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyam</a>
+            <a href="prakalpmahwari.html" class="hover:text-teal-400">Prakalp Mahwari</a>
+          </div>
 
-<a href="./donationform.html"
-class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
+        </div>
 
-Donate
+        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
 
-</a>
+          Donate
 
-</div>
+        </a>
+        
 
-</div>
+      </div>
 
-</nav>
+    </div>
+
+  </nav>
 
 <section class="bg-gray-700 text-white py-24">
 
