@@ -47,6 +47,28 @@
         transform: translateY(-800px)
       }
     }
+   .project-card {
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.project-card img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
     body,
     html {
@@ -270,6 +292,74 @@
     </div>
 
   </section>
+   <section class="text-center font-bold">
+  <div class="bg-[#F5F1E8]/80 rounded-lg p-8 md:p-12 min-h-screen">
+
+    <h1 class="text-3xl sm:text-4xl md:text-5xl text-teal-600 mb-6"
+        data-aos="fade-up">
+      Our Projects are:
+    </h1>
+
+    <div class="grid grid-cols-1 text-gray-700 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+
+      <!-- Project Card -->
+      <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
+          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" class="w-full h-full object-cover"/>
+        </div>
+        <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
+          <a href="prakalpbezuban.html">Prakalp Bezubaan</a>
+        </h3>
+      </div>
+
+      <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
+          <img src="./images/paryavarana.png" class="w-full h-full object-cover"/>
+        </div>
+        <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
+          <a href="prakalpparyavarana.html">Prakalp Paryavarana</a>
+        </h3>
+      </div>
+
+      <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
+          <img src="./images/empowerment.png" class="w-full h-full object-cover"/>
+        </div>
+        <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
+          <a href="womenempowerment.html">Naari Shakti</a>
+        </h3>
+      </div>
+
+      <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
+          <img src="./images/prakalp.png" class="w-full h-full object-cover"/>
+        </div>
+        <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
+          <a href="prakalpsaath.html">Prakalp Saath</a>
+        </h3>
+      </div>
+
+      <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="500">
+        <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
+          <img src="./images/awarenessess.png" class="w-full h-full object-cover"/>
+        </div>
+        <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
+          <a href="prakalpchaitanyan.html">Prakalp Chaitanyam</a>
+        </h3>
+      </div>
+
+      <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="600">
+        <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
+          <img src="./images/mahmarii.png" class="w-full h-full object-cover"/>
+        </div>
+        <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
+          <a href="prakalpmahwari.html">Prakalp Mahwari</a>
+        </h3>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- ABOUT SECTION -->
 
@@ -984,7 +1074,13 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 
+
+
 <script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
   const projectBtn = document.getElementById("projects-btn");
   const projectMenu = document.getElementById("projects-menu");
 
