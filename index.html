@@ -79,155 +79,13 @@
 </head>
 
 <body class="text-gray-800">
-
   <!-- NAVBAR -->
-  <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
-
-    <div class="max-w-7xl mx-auto  px-6 py-3 flex justify-between items-center">
-
-      <!-- Logo -->
-      <a href="index.html">
-      <h1 class="text-xl md:text-2xl  w-[250px]  text-teal-400 flex flex-row justify-evenly items-center gap-2 font-bold ">
-          <img src="./images/doglogo.png" alt="logo" class="w-[80px] h-[70px] rounded-full ">
-        WEFORACAUSE
-      </h1></a>
-
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center gap-6 list-none font-medium">
-
-        <a href="./index.html" class="hover:text-teal-400 transition">Home</a>
-        <a href="./gallery.html" class="hover:text-teal-400 transition">Gallery</a>
-        <a href="./about.html" class="hover:text-teal-400 transition">About</a>
-        <a href="./adopt.html" class="hover:text-teal-400 transition">Adopt</a>
-        <a href="fundraising.html" class="hover:text-teal-400 transition">
-  Fundraising
-</a>
-        <a href="./volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a>
-        <a href="./internship.html" class="hover:text-teal-400 transition">Internship</a>
-        <li>
-  <a href="https://www.amazon.in/hz/wishlist/ls/1TIOQIGJS6WQV?ref_=wl_share" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class="flex items-center gap-2  hover:text-teal-400 transition font-medium">
-    
-    <i class="ri-amazon-fill text-lg"></i>
-    Donate
-
-  </a>
-</li>
-        <div class="relative">
-
-          <button id="projects-btn" class="hover:text-teal-400 transition flex items-center gap-1">
-            Projects
-            <span class="text-xs">▼</span>
-          </button>
-
-          <!-- Dropdown -->
-          <div id="projects-menu"
-            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-50">
-
-            <a href="prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Prakalp Bezuban
-            </a>
-
-            <a href="prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Prakalp Paryavarana
-            </a>
-
-            <a href="womenempowerment.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Naari Shakti
-            </a>
-
-            <a href="prakalpsaath.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Prakalp Saath
-            </a>
-
-            <a href="prakalpchaitanyan.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Prakalp Chaitanyam
-            </a>
-
-            <a href="prakalpmahwari.html" class="block px-5 py-2 hover:bg-teal-50 hover:text-teal-600 transition">
-              Prakalp Mahwari
-            </a>
-
-          </div>
-
-        </div>
-
-        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full transition">
-
-          Donate
-
-        </a>
-
-      </div>
-
-      <!-- Mobile Button -->
-      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
-        ☰
-      </button>
-
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700">
-
-      <div class="flex flex-col text-center py-6 space-y-4 font-medium">
-
-        <a href="./index.html" class="hover:text-teal-400">Home</a>
-        <a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
-        <a href="./about.html" class="hover:text-teal-400">About</a>
-        <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
-        <a href="fundraising.html" class="hover:text-teal-400 transition">
-  Fundraising
-</a>
-        <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
-        <a href="./internship.html" class="hover:text-teal-400">Internship</a>
-        <li>
-  <a href="https://www.amazon.in/hz/wishlist/ls/1TIOQIGJS6WQV?ref_=wl_share" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     class=" hover:text-teal-400">
-    
-    <i class="ri-amazon-fill text-lg"></i>
-    Donate
-
-  </a>
-</li>
-        <div>
-
-          <button id="project-toggle" class="w-full hover:text-teal-400">
-            Projects ▼
-          </button>
-
-          <div id="project-mobile" class="hidden flex flex-col space-y-2 mt-2">
-
-            <a href="prakalpbezuban.html" class="hover:text-teal-400">Prakalp Bezuban</a>
-            <a href="prakalpparyavarana.html" class="hover:text-teal-400">Prakalp Paryavarana</a>
-            <a href="womenempowerment.html" class="hover:text-teal-400">Naari Shakti</a>
-            <a href="prakalpsaath.html" class="hover:text-teal-400">Prakalp Saath</a>
-            <a href="prakalpchaitanyan.html" class="hover:text-teal-400">Prakalp Chaitanyam</a>
-            <a href="prakalpmahwari.html" class="hover:text-teal-400">Prakalp Mahwari</a>
-          </div>
-
-        </div>
-
-        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 py-2 rounded-full mx-10">
-
-          Donate
-
-        </a>
-        
-
-      </div>
-
-    </div>
-
-  </nav>
+  <div class="nav"></div>
+  
   <!-- HERO SECTION -->
   <section id="home"
     class="relative min-h-screen py-20 flex items-center justify-center text-center text-white bg-cover bg-center"
-    style="background-image:url('https://images.unsplash.com/photo-1543466835-00a7907e9de1');">
+    style="background-image:url('./images/dogs1.jpg');">
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/60"></div>
@@ -295,7 +153,7 @@
 
       <!-- IMAGE -->
 
-      <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d"
+      <img src="./images/dogs.jpg"
         class="rounded-2xl shadow-xl w-full object-cover" data-aos="fade-right">
 
       <!-- CONTENT -->
@@ -391,8 +249,8 @@
         <!-- CARD -->
         <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center">
 
-          <img src="./images/kishore.png"
-            class="w-36 h-36 object-cover rounded-lg border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+          <img src="./images/kishore.jpg"
+            class="w-36 h-36 object-cover rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
 
           <h3 class="text-xl font-semibold">Kishor Kapdi</h3>
           <p class="text-teal-400 text-sm mb-3">Director</p>
@@ -412,8 +270,8 @@ Along with his wife, Daksha Kapdi, he has been caring for animals in their villa
 
         <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center">
 
-          <img src="./images/Avani.png"
-            class="w-36 h-36 object-cover rounded-lg border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+          <img src="./images/Avani.jpg"
+            class="w-36 h-36 object-cover rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
 
           <h3 class="text-xl font-semibold">Avani Kapdi</h3>
           <p class="text-teal-400 text-sm mb-3">Founder and CEO</p>
@@ -432,8 +290,8 @@ Along with his wife, Daksha Kapdi, he has been caring for animals in their villa
 
         <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center">
 
-          <img src="./images/monish.png"
-            class="w-36 h-36 object-contain rounded-lg border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+          <img src="./images/monish.jpg"
+            class="size-40  rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
 
           <h3 class="text-xl font-semibold">Monish Makwana</h3>
           <p class="text-teal-400 text-sm mb-3">Director</p>
@@ -454,8 +312,8 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
         <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-10 flex flex-col items-center text-center">
 
-          <img src="./images/kashmira.png"
-            class="w-36 h-36 object-cover rounded-lg border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+          <img src="./images/kashmira.jpg"
+            class="w-36 h-36 object-cover rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
 
           <h3 class="text-xl font-semibold">Kashmira Vira</h3>
           <p class="text-teal-400 text-sm mb-3">Co-Founder</p>
@@ -466,6 +324,84 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
         </div>
       </div>
+      <div class="relative group" data-aos="zoom-in" data-aos-delay="200">
+
+        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-pink-500 rounded-2xl blur opacity-25 group-hover:opacity-60 transition"></div>
+
+        <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center">
+
+          <img src="./images/team8.jpeg"
+            class="size-40  rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+
+          <h3 class="text-xl font-semibold">Deepak Rajpurohit</h3>
+          <p class="text-teal-400 text-sm mb-3">Director</p>
+
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Monish Makwana is a national-level athlete who used to feed community dogs and once rescued a dog named Coco without receiving any help.
+Moved by his compassion for animals and the lack of support available, he decided to start his own NGO, We For A Cause Foundation, with a mission to ensure that animals receive timely treatment and proper care.
+With his experience, dedication, and strong sense of integrity, he is committed to developing the organization and creating a meaningful impact in the lives of animals in need.
+          </p>
+
+        </div>
+      </div>
+      <div class="relative group" data-aos="zoom-in" data-aos-delay="200">
+
+        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-pink-500 rounded-2xl blur opacity-25 group-hover:opacity-60 transition"></div>
+
+        <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center">
+
+          <img src="./images/team6.jpeg"
+            class="size-40  rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+
+          <h3 class="text-xl font-semibold">Vaibhav Parab</h3>
+          <p class="text-teal-400 text-sm mb-3">Director</p>
+
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Monish Makwana is a national-level athlete who used to feed community dogs and once rescued a dog named Coco without receiving any help.
+Moved by his compassion for animals and the lack of support available, he decided to start his own NGO, We For A Cause Foundation, with a mission to ensure that animals receive timely treatment and proper care.
+With his experience, dedication, and strong sense of integrity, he is committed to developing the organization and creating a meaningful impact in the lives of animals in need.
+          </p>
+
+        </div>
+      </div>
+      <div class="relative group" data-aos="zoom-in" data-aos-delay="200">
+
+        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-pink-500 rounded-2xl blur opacity-25 group-hover:opacity-60 transition"></div>
+
+        <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center">
+
+          <img src="./images/team5.jpeg"
+            class="size-40  rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+
+          <h3 class="text-xl font-semibold">Alpana Gole</h3>
+          <p class="text-teal-400 text-sm mb-3">Co-founder </p>
+
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Alpana is a dedicated community animal caretaker and feeder based in Mumbai. Sharing the same vision of creating a structured and impactful support system for animals in need, she joined hands with We For A Cause to strengthen the mission of the NGO. As a Co-Founder, her dedication, hands-on involvement, and unwavering commitment continue to be a driving force in the organization’s efforts to provide timely treatment, care, and protection to animals in need.
+          </p>
+
+        </div>
+      </div>
+       <div class="relative group" data-aos="zoom-in" data-aos-delay="200">
+
+        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-pink-500 rounded-2xl blur opacity-25 group-hover:opacity-60 transition"></div>
+
+        <div class="relative bg-white/10 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center">
+
+          <img src="./images/team7.jpeg"
+            class="size-40  rounded-full border-4 border-white mb-4 group-hover:scale-110 transition duration-500">
+
+          <h3 class="text-xl font-semibold">Tanish Katarmal</h3>
+          <p class="text-teal-400 text-sm mb-3">Co-founder </p>
+
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Alpana is a dedicated community animal caretaker and feeder based in Mumbai. Sharing the same vision of creating a structured and impactful support system for animals in need, she joined hands with We For A Cause to strengthen the mission of the NGO. As a Co-Founder, her dedication, hands-on involvement, and unwavering commitment continue to be a driving force in the organization’s efforts to provide timely treatment, care, and protection to animals in need.
+          </p>
+
+        </div>
+      </div>
+      
+      
 
     </div>
 
@@ -486,7 +422,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
       <!-- Project Card -->
       <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="100">
         <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" class="w-full h-full object-cover"/>
+          <img src="./images/prakalp1.jpg" class="w-full h-full object-cover"/>
         </div>
         <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
           <a href="prakalpbezuban.html">Prakalp Bezubaan</a>
@@ -495,7 +431,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
       <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="200">
         <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
-          <img src="./images/paryavarana.png" class="w-full h-full object-cover"/>
+          <img src="./images/paryavarana.jpg" class="w-full h-full object-cover"/>
         </div>
         <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
           <a href="prakalpparyavarana.html">Prakalp Paryavarana</a>
@@ -504,7 +440,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
       <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="300">
         <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
-          <img src="./images/empowerment.png" class="w-full h-full object-cover"/>
+          <img src="./images/empowerment.jpg" class="w-full h-full object-cover"/>
         </div>
         <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
           <a href="womenempowerment.html">Naari Shakti</a>
@@ -513,7 +449,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
       <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="400">
         <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
-          <img src="./images/prakalp.png" class="w-full h-full object-cover"/>
+          <img src="./images/prakalp.jpg" class="w-full h-full object-cover"/>
         </div>
         <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
           <a href="prakalpsaath.html">Prakalp Saath</a>
@@ -522,7 +458,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
       <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="500">
         <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
-          <img src="./images/awarenessess.png" class="w-full h-full object-cover"/>
+          <img src="./images/awarenessess.jpg" class="w-full h-full object-cover"/>
         </div>
         <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
           <a href="prakalpchaitanyan.html">Prakalp Chaitanyam</a>
@@ -531,7 +467,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
       <div class="project-card cursor-pointer" data-aos="fade-up" data-aos-delay="600">
         <div class="w-36 h-36 mx-auto rounded-lg overflow-hidden bg-white shadow-lg">
-          <img src="./images/mahmarii.png" class="w-full h-full object-cover"/>
+          <img src="./images/mahmarii.jpg" class="w-full h-full object-cover"/>
         </div>
         <h3 class="mt-5 text-lg underline hover:text-teal-600 transition">
           <a href="prakalpmahwari.html">Prakalp Mahwari</a>
@@ -592,7 +528,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
         <div
           class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300"
           data-aos="fade-up" data-aos-delay="100">
-          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b" class="h-64 w-full object-cover">
+          <img src="./images/adopt.jpg" class="h-64 w-full object-cover">
           <div class="p-6">
             <h3 class="font-bold text-2xl mb-2 text-slate-900">Bella</h3>
             <p class="text-gray-600 mb-4">Friendly rescued dog.</p>
@@ -606,7 +542,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
         <div
           class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300"
           data-aos="fade-up" data-aos-delay="200">
-          <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" class="h-64 w-full object-cover">
+          <img src="./images/adopt1.jpg" class="h-64 w-full object-cover">
           <div class="p-6">
             <h3 class="font-bold text-2xl mb-2 text-slate-900">Milo</h3>
             <p class="text-gray-600 mb-4">Playful rescued kitten.</p>
@@ -619,7 +555,7 @@ With his experience, dedication, and strong sense of integrity, he is committed 
         <div
           class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300"
           data-aos="fade-up" data-aos-delay="300">
-          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e" class="h-64 w-full object-cover">
+          <img src="./images/adopt2.jpg" class="h-64 w-full object-cover">
           <div class="p-6">
             <h3 class="font-bold text-2xl mb-2 text-slate-900">Rocky</h3>
             <p class="text-gray-600 mb-4">Recovered rescue dog.</p>
@@ -932,17 +868,17 @@ With his experience, dedication, and strong sense of integrity, he is committed 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
 
       <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
-        <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8" alt="Rescue 1"
+        <img src="./images/dogs1.jpg" alt="Rescue 1"
           class="w-full h-56 object-cover transform transition duration-500 hover:scale-105">
       </div>
 
       <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
-        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006" alt="Rescue 2"
+        <img src="./images/resue.jpg" alt="Rescue 2"
           class="w-full h-56 object-cover transform transition duration-500 hover:scale-105">
       </div>
 
       <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
-        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Rescue 3"
+        <img src="./images/dogs2.jpg" alt="Rescue 3"
           class="w-full h-56 object-cover transform transition duration-500 hover:scale-105">
       </div>
 
@@ -1047,121 +983,39 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
   </section>
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 py-16">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
-
-      <!-- Logo & About -->
-      <div>
-       <a href="index.html"><h1 class="text-2xl font-bold text-teal-400 mb-4">WEFORACAUSE</h1></a>
-        <p class="text-white text-sm">
-          Dedicated to rescuing injured and abandoned animals, providing care, and helping them find loving homes.
-        </p>
-        <p class="mt-4 text-white italic text-sm">
-          "Every life matters. Make a difference today!"
-        </p>
-      </div>
-
-      <!-- Quick Links -->
-<div>
-  <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
-
-  <!-- Small helper text (professional touch) -->
-  <p class="text-sm text-white mb-3">
-    Support us through donations or essential items
-  </p>
-
-  <ul class="space-y-2 text-white">
-
-    <li><a href="index.html" class="hover:text-teal-400 transition">Home</a></li>
-    <li><a href="about.html" class="hover:text-teal-400 transition">About</a></li>
-    <li><a href="adopt.html" class="hover:text-teal-400 transition">Adopt</a></li>
-    <li><a href="volunteerform.html" class="hover:text-teal-400 transition">Volunteer</a></li>
-    <li><a href="internship.html" class="hover:text-teal-400 transition">Internship</a></li>
-
-    <!-- Donate (already exists) -->
-    <li><a href="donationform.html" class="hover:text-teal-400 transition">Donate</a></li>
-
-    <!-- Amazon Wishlist (NEW - highlighted but balanced) -->
-    <li>
-      <a href="https://www.amazon.in/hz/wishlist/ls/1TIOQIGJS6WQV?ref_=wl_share"
-      class="flex items-center justify-between bg-pink-500 hover:bg-pink-600  text-white px-4 py-2 rounded-lg transition mt-2">
-        
-        <span class="flex items-center gap-2">
-          <i class="ri-amazon-fill text-lg"></i>
-          Donate via Amazon Wishlist
-        </span>
-
-        <i class="ri-external-link-line"></i>
-
-      </a>
-    </li>
-
-  </ul>
-</div>
-
-      <!-- Contact Info -->
-      <div>
-        <h3 class="text-lg font-semibold text-white mb-4">Contact Us</h3>
-
-        <p class="text-white text-sm">
-          📍 Shiv Tekdi, Shiv Ratan Marg, Kisan Nagar 3, Kisan Nagar, Thane West, Thane, Maharashtra 400604
-        </p>
-
-        <p class="text-white text-sm">
-          📧 <a href="mailto:info@weforacause.org" class="hover:underline">
-            info@weforacause.org
-          </a>
-        </p>
-
-        <p class="text-white text-sm">
-          📞 <a href="tel:+919594465856" class="hover:underline">
-            +919594465856
-          </a>
-        </p>
-
-        <!-- Social Icons -->
-        <div class="flex gap-4 mt-4">
-          <a href="https://www.instagram.com/weforacause" target="_blank"
-            class="text-pink-500 hover:text-pink-600 transition text-xl">
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <a href="https://www.facebook.com/weforacause" class="text-blue-600 hover:text-blue-700 transition text-xl">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-
-          <a href="https://www.youtube.com/@weforacausefoundation"
-            class="text-red-500 hover:text-red-600 transition text-xl">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/we-for-a-cause-foundation"
-            class="text-blue-500 hover:text-blue-600 transition text-xl">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Newsletter -->
-      <div>
-        <h3 class="text-lg font-semibold text-white mb-4">Newsletter</h3>
-        <form class="flex flex-col gap-2">
-          <input type="email" placeholder="Your Email"
-            class="p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 border border-gray-700 text-gray-900">
-          <button class="bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-lg font-semibold transition">
-            Subscribe
-          </button>
-        </form>
-      </div>
-
-    </div>
-
-    <!-- Copyright -->
-    <div class="mt-12 border-t border-gray-800 pt-6 text-gray-500 text-sm text-center">
-      © 2026 WE FOR A CAUSE FOUNDATION. All rights reserved.
-    </div>
-  </footer>
+ <div class="footer"></div>
 </body>
+<script src="./nav.js"></script>
+<script src="./footer.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+
+    const target = +counter.getAttribute('data-target'); // final number
+    let count = 0; // start from 0
+
+    const updateCount = () => {
+      const increment = target / 100; // adjust speed
+
+      if (count < target) {
+        count += increment;
+        counter.innerText = Math.ceil(count) + "+";
+        setTimeout(updateCount, 20); // faster/slower
+      } else {
+        counter.innerText = target + "+";
+      }
+    };
+
+    updateCount();
+
+  });
+
+});
+</script>
 <script>
   AOS.init({
     duration: 1000,
@@ -1190,30 +1044,6 @@ With his experience, dedication, and strong sense of integrity, he is committed 
     mobileMenu.classList.toggle("hidden")
 
   })
-
-  
-  const counters = document.querySelectorAll('.counter');
-
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText.replace('+', '');
-
-      const increment = target / 100;
-
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment) + "+";
-        setTimeout(updateCount, 20);
-      } else {
-        counter.innerText = target + "+";
-      }
-    };
-
-    updateCount();
-  });
-
-
-
 
   AOS.init({
     duration: 1000,
@@ -1247,5 +1077,6 @@ With his experience, dedication, and strong sense of integrity, he is committed 
 
 
 </script>
+
 
 </html>
