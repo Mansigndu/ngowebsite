@@ -1,292 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volunteer Form | WE FOR A CAUSE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WE FOR A CAUSE</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Remixicon -->
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  
-
-  <style>
-    body {
-      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f0f4f8;
-    }
-    body,
-    html {
-      overflow-x: hidden;
-    }
-  </style>
+<style>
+  html, body { overflow-x: hidden; font-family: 'Poppins', sans-serif; }
+</style>
 </head>
+
 <body class="antialiased">
 
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
+<div class="nav"></div>
 
-<!-- PROFESSIONAL RESPONSIVE NAVBAR -->
+<!-- FIRST SECTION / HERO -->
+<section class="pt-28 pb-10 sm:pt-32 sm:pb-14 md:pt-36 md:pb-20 bg-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-<div class="nav">
-</div>
-  
-<!-- Volunteer Form Section -->
-<section class="bg-slate-50 py-16 px-4">
+    <!-- IMAGE -->
+    <div data-aos="fade-right">
+      <img src="./images/prakalp.jpg" alt="WE FOR A CAUSE" class="w-full h-[350px] md:h-[420px] object-cover rounded-xl shadow-md">
+    </div>
 
-<div class="max-w-4xl mx-auto">
+    <!-- TEXT -->
+    <div data-aos="fade-left" class="text-center md:text-left text-lg md:text-xl">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        Prakalp <span class="text-teal-500">Saath</span>
+      </h1>
+      <p class="text-gray-700 leading-relaxed mb-4 max-w-xl mx-auto md:mx-0">
+        Project Saath is our initiative for educating and empowering children and women, giving opportunities to earn a living, and building a brighter future.
+      </p>
+      <a href="#volunteer" class="inline-block mt-6 bg-teal-600 text-white px-6 py-2.5 rounded-lg text-sm sm:text-base hover:bg-teal-700 transition shadow-md">
+        Join as Volunteer
+      </a>
+    </div>
 
-<!-- Heading -->
-<div class="text-center mb-10" data-aos="fade-down">
-<h2 class="text-3xl md:text-4xl font-bold text-slate-900  mt-20 mb-2">
-Become a Volunteer
-</h2>
-
-<p class="text-teal-600 font-semibold tracking-wide">
-Join our mission to rescue and care for animals
-</p>
-</div>
-
-
-<!-- Form -->
-<form class="bg-white shadow-xl rounded-2xl p-6 md:p-10 space-y-6" data-aos="fade-up">
-
-<!-- Name + Email -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-<div>
-<label class="text-sm font-medium text-gray-700">
-Full Name *
-</label>
-
-<input type="text"
-class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-focus:ring-2 focus:ring-teal-500 outline-none">
-</div>
-
-
-<div>
-<label class="text-sm font-medium text-gray-700">
-Email *
-</label>
-
-<input type="email"
-class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-focus:ring-2 focus:ring-teal-500 outline-none">
-</div>
-
-</div>
-
-
-<!-- Phone + City -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-<div>
-<label class="text-sm font-medium text-gray-700">
-Phone Number *
-</label>
-
-<input type="tel"
-class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-focus:ring-2 focus:ring-teal-500 outline-none">
-</div>
-
-<div>
-<label class="text-sm font-medium text-gray-700">
-City *
-</label>
-
-<input type="text"
-class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-focus:ring-2 focus:ring-teal-500 outline-none">
-</div>
-
-</div>
-
-
-<!-- Volunteer Role -->
-<div>
-
-<label class="text-sm font-medium text-gray-700">
-How would you like to help?
-</label>
-
-<div>
-  <select id="volunteerRole"
-    required
-    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-    focus:ring-2 focus:ring-teal-500 text-sm md:text-base">
-
-    <option value="">Select Volunteer Role</option>
-    <option value="Animal Rescue">Animal Rescue</option>
-    <option value="Animal Care">Animal Care</option>
-    <option value="Social Media">Social Media</option>
-    <option value="Fundraising">Fundraising</option>
-    <option value="Other">Other</option>
-
-  </select>
-</div>
-
-<!-- Hidden Input -->
-<div id="otherVolunteerField" class="mt-4 hidden">
-  <label class="text-sm font-medium text-gray-700">
-    Please specify
-  </label>
-
-  <input type="text"
-    id="otherVolunteerInput"
-    placeholder="Enter your role"
-    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-    focus:ring-2 focus:ring-teal-500 text-sm md:text-base">
-</div>
-</div>
-
-
-<!-- Message -->
-<div>
-
-<label class="text-sm font-medium text-gray-700">
-Message
-</label>
-
-<textarea rows="3"
-class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg
-focus:ring-2 focus:ring-teal-500"></textarea>
-
-</div>
-
-
-<!-- Submit -->
-<div class="text-center pt-4">
-
-<button
-class="bg-teal-500 hover:bg-teal-600 text-white
-px-10 py-3 rounded-full font-semibold transition shadow-md">
-
-Submit Application
-
-</button>
-
-</div>
-
-</form>
-
-
-<!-- Note -->
-<p class="text-gray-500 text-sm text-center mt-6">
-We respect your privacy. Your information will not be shared.
-</p>
-
-</div>
-
+  </div>
 </section>
 
+<!-- WHAT WE DO SECTION -->
+<section class="py-24 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+    <h2 class="text-4xl mb-4 font-bold text-slate-800">
+      What <span class="text-teal-500">We Do</span>
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Our initiatives focus on sustainability, menstrual health awareness, community welfare, and protecting the environment for future generations.
+    </p>
+  </div>
 
-  <div class="footer"></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-2" data-aos="fade-up">
+      <h3 class="text-5xl font-bold text-teal-500 mb-6">01</h3>
+      <p class="font-semibold text-gray-800 uppercase tracking-wider">Green Products</p>
+    </div>
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-5xl font-bold text-teal-500 mb-6">02</h3>
+      <p class="font-semibold text-gray-800 uppercase tracking-wider">Campaigns</p>
+    </div>
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-5xl font-bold text-teal-500 mb-6">03</h3>
+      <p class="font-semibold text-gray-800 uppercase tracking-wider">Sustainability</p>
+    </div>
+    <div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-5xl font-bold text-teal-500 mb-6">04</h3>
+      <p class="font-semibold text-gray-800 uppercase tracking-wider">Awareness</p>
+    </div>
+  </div>
+</section>
 
-  <!-- AOS JS -->
-   <script src="./footer.js"></script>
-   <script src="./nav.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-  const projectBtn = document.getElementById("projects-btn");
-const projectMenu = document.getElementById("projects-menu");
+<!-- VOLUNTEER FORM SECTION -->
+<section id="volunteer" class="bg-slate-50 py-16 px-4">
+  <div class="max-w-4xl mx-auto">
 
-projectBtn.addEventListener("click", () => {
-  projectMenu.classList.toggle("hidden");
-});
-  const projectToggle = document.getElementById("project-toggle");
-const projectMobile = document.getElementById("project-mobile");
+    <div class="text-center mb-10" data-aos="fade-down">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-20 mb-2">
+        Become a Volunteer
+      </h2>
+      <p class="text-teal-600 font-semibold tracking-wide">
+        Join our mission to rescue and care for animals & communities
+      </p>
+    </div>
 
-projectToggle.addEventListener("click", () => {
-  projectMobile.classList.toggle("hidden");
-});
+    <form class="bg-white shadow-xl rounded-2xl p-6 md:p-10 space-y-6" data-aos="fade-up">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="text-sm font-medium text-gray-700">Full Name *</label>
+          <input type="text" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none">
+        </div>
+        <div>
+          <label class="text-sm font-medium text-gray-700">Email *</label>
+          <input type="email" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none">
+        </div>
+      </div>
 
-/* MOBILE MENU TOGGLE */
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="text-sm font-medium text-gray-700">Phone Number *</label>
+          <input type="tel" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none">
+        </div>
+        <div>
+          <label class="text-sm font-medium text-gray-700">City *</label>
+          <input type="text" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none">
+        </div>
+      </div>
 
-const menuBtn = document.getElementById("menu-btn")
-const mobileMenu = document.getElementById("mobile-menu")
+      <div>
+        <label class="text-sm font-medium text-gray-700">How would you like to help?</label>
+        <select id="volunteerRole" required class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 text-sm md:text-base">
+          <option value="">Select Volunteer Role</option>
+          <option value="Animal Rescue">Animal Rescue</option>
+          <option value="Animal Care">Animal Care</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Fundraising">Fundraising</option>
+          <option value="Other">Other</option>
+        </select>
 
-menuBtn.addEventListener("click", () => {
+        <div id="otherVolunteerField" class="mt-4 hidden">
+          <label class="text-sm font-medium text-gray-700">Please specify</label>
+          <input type="text" id="otherVolunteerInput" placeholder="Enter your role" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 text-sm md:text-base">
+        </div>
+      </div>
 
-mobileMenu.classList.toggle("hidden")
+      <div>
+        <label class="text-sm font-medium text-gray-700">Message</label>
+        <textarea rows="3" class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500"></textarea>
+      </div>
 
-})
+      <div class="text-center pt-4">
+        <button class="bg-teal-500 hover:bg-teal-600 text-white px-10 py-3 rounded-full font-semibold transition shadow-md">
+          Submit Application
+        </button>
+      </div>
 
-const counters = document.querySelectorAll('.counter');
+    </form>
 
-counters.forEach(counter => {
+    <p class="text-gray-500 text-sm text-center mt-6">We respect your privacy. Your information will not be shared.</p>
+  </div>
+</section>
 
-const updateCount = () => {
+<!-- FOOTER -->
+<div class="footer"></div>
 
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
+<!-- SCRIPTS -->
+<script src="./footer.js"></script>
+<script src="./nav.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-const speed = 50;
+<script>
+  // Initialize AOS
+  AOS.init({ duration: 1000, once: true });
 
-const inc = target / speed;
-
-if(count < target){
-
-counter.innerText = Math.ceil(count + inc);
-setTimeout(updateCount,30);
-
-}
-
-else{
-
-counter.innerText = target;
-
-}
-
-};
-
-updateCount();
-
-});
-
-
-
-AOS.init({
-duration:1000,
-once:true
-});
-const faqButtons = document.querySelectorAll('.faq-btn');
-
-  faqButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const answer = btn.nextElementSibling;
-      const icon = btn.querySelector('.faq-icon');
-
-      answer.classList.toggle('hidden');
-      icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
-    });
-  });
-AOS.init({
-    once: true,
-    duration: 800,
-    offset: 120,
-  });
-
-
-
-
-// CLOSE MENU WHEN SCROLL
-window.addEventListener("scroll", () => {
-mobileMenu.classList.add("hidden");
-});
-
+  // Show / Hide "Other" volunteer role input
   const volunteerRole = document.getElementById("volunteerRole");
   const otherVolunteerField = document.getElementById("otherVolunteerField");
   const otherVolunteerInput = document.getElementById("otherVolunteerInput");
 
-  volunteerRole.addEventListener("change", function () {
-    if (this.value === "Other") {
+  volunteerRole.addEventListener("change", function() {
+    if(this.value === "Other"){
       otherVolunteerField.classList.remove("hidden");
       otherVolunteerInput.setAttribute("required", "true");
     } else {
@@ -294,9 +182,7 @@ mobileMenu.classList.add("hidden");
       otherVolunteerInput.removeAttribute("required");
     }
   });
-
-
-
-
 </script>
+
+</body>
 </html>

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </button>
 
           <div id="projects-menu"
-            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2">
+            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-60">
 
             <a href="./prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Bezuban</a>
             <a href="./prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Paryavarana</a>

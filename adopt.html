@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,172 +5,111 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Adopt a Dog | We For A Cause</title>
 
+<!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Remixicon -->
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-
-
-</head>
 <style>
-  body,html{
+  body, html {
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
   }
 </style>
-
-
+</head>
 <body class="bg-gray-50 text-gray-800">
 
-
-<!-- HERO -->
-
+<!-- NAVBAR -->
 <div class="nav"></div>
 
+<!-- HERO SECTION -->
 <section class="bg-gray-700 text-white py-24">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-<h1 class="text-4xl md:text-6xl mt-20 font-bold mb-6">
-Adopt a Friend
-</h1>
-
-<p class="max-w-3xl mx-auto text-lg opacity-90">
-Give a rescued dog a second chance at life. Adoption not only saves a life
-but also brings unconditional love into your home.
-</p>
-
-</div>
-
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-6xl mt-20 font-bold mb-6">
+      Adopt a Friend
+    </h1>
+    <p class="max-w-3xl mx-auto text-lg opacity-90">
+      Give a rescued dog a second chance at life. Adoption not only saves a life but also brings unconditional love into your home.
+    </p>
+  </div>
 </section>
-
-
 
 <!-- DOGS AVAILABLE FOR ADOPTION -->
-
 <section class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-16 text-slate-900">
+      Dogs Available for Adoption
+    </h2>
 
-<div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-10">
 
-<h2 class="text-4xl font-bold text-center mb-16 text-slate-900">
-Dogs Available for Adoption
-</h2>
+      <!-- DOG 1 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition" data-aos="fade-up">
+        <img src="./images/dogs1.jpg" class="w-full h-56 object-cover" alt="Bruno">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Bruno</h3>
+          <p class="text-gray-500 mb-3">2 Years • Male • Friendly</p>
+          <p class="text-gray-600 mb-4">
+            Bruno is an energetic and loving dog who enjoys playing and spending time with people.
+          </p>
+          <a href="https://wa.me/919594465856?text=Hi%2C%20I%20want%20to%20adopt%20Bruno" target="_blank" class="bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 inline-block">
+            Adopt Me
+          </a>
+        </div>
+      </div>
 
+      <!-- DOG 2 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+        <img src="./images/dogs2.jpg" class="w-full h-56 object-cover" alt="Lucy">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Lucy</h3>
+          <p class="text-gray-500 mb-3">1.5 Years • Female • Calm</p>
+          <p class="text-gray-600 mb-4">
+            Lucy is a sweet and gentle dog who loves cuddles and peaceful walks.
+          </p>
+          <a href="https://wa.me/919594465856?text=Hi%2C%20I%20want%20to%20adopt%20Lucy" target="_blank" class="bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 inline-block">
+            Adopt Me
+          </a>
+        </div>
+      </div>
 
-<div class="grid md:grid-cols-3 gap-10">
+      <!-- DOG 3 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+        <img src="./images/dogs3.jpg" class="w-full h-56 object-cover" alt="Rocky">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Rocky</h3>
+          <p class="text-gray-500 mb-3">3 Years • Male • Playful</p>
+          <p class="text-gray-600 mb-4">
+            Rocky loves running, playing, and being around kids. Perfect for an active family.
+          </p>
+          <a href="https://wa.me/919594465856?text=Hi%2C%20I%20want%20to%20adopt%20Rocky" target="_blank" class="bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 inline-block">
+            Adopt Me
+          </a>
+        </div>
+      </div>
 
-
-<!-- DOG 1 -->
-
-<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition" data-aos="fade-up">
-
-<img
-src="./images/dogs1.jpg"
-class="w-full h-56 object-cover"
->
-
-<div class="p-6">
-
-<h3 class="text-2xl font-bold mb-2">Bruno</h3>
-
-<p class="text-gray-500 mb-3">2 Years • Male • Friendly</p>
-
-<p class="text-gray-600 mb-4">
-Bruno is an energetic and loving dog who enjoys playing and spending time with people.
-</p>
-
-<a href="https://wa.me/919594465856?text=Hi%2C%20I%20want%20to%20adopt%20Bruno" target="_blank"
-class="bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 inline-block">
-Adopt Me
-</a>
-
-</div>
-</div>
-
-
-
-<!-- DOG 2 -->
-
-<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
-
-<img
-src="./images/dogs2.jpg"
-class="w-full h-56 object-cover"
->
-
-<div class="p-6">
-
-<h3 class="text-2xl font-bold mb-2">Lucy</h3>
-
-<p class="text-gray-500 mb-3">1.5 Years • Female • Calm</p>
-
-<p class="text-gray-600 mb-4">
-Lucy is a sweet and gentle dog who loves cuddles and peaceful walks.
-</p>
-
-<a href="https://wa.me/919594465856?text=Hi%2C%20I%20want%20to%20adopt%20Lucy" target="_blank"
-class="bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 inline-block">
-Adopt Me
-</a>
-
-</div>
-</div>
-
-
-
-<!-- DOG 3 -->
-
-<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
-
-<img
-src="./images/dogs3.jpg"
-class="w-full h-56 object-cover"
->
-
-<div class="p-6">
-
-<h3 class="text-2xl font-bold mb-2">Rocky</h3>
-
-<p class="text-gray-500 mb-3">3 Years • Male • Playful</p>
-
-<p class="text-gray-600 mb-4">
-Rocky loves running, playing, and being around kids. Perfect for an active family.
-</p>
-
-<a href="https://wa.me/919594465856?text=Hi%2C%20I%20want%20to%20adopt%20Rocky" target="_blank"
-class="bg-teal-600 text-white px-5 py-2 rounded-lg hover:bg-teal-700 inline-block">
-Adopt Me
-</a>
-
-</div>
-</div>
-
-
-</div>
-</div>
-
+    </div>
+  </div>
 </section>
-
-
 
 <!-- ADOPTION PROCESS -->
 <section class="bg-white py-24">
   <div class="max-w-6xl mx-auto px-6 text-center">
-
-    <!-- Title -->
-    <h2 class="text-4xl font-bold mb-4 text-gray-900">
-      Adoption Process
-    </h2>
-
+    <h2 class="text-4xl font-bold mb-4 text-gray-900">Adoption Process</h2>
     <p class="text-gray-500 text-sm mb-12">
       Follow a simple process to give a loving home to a pet.
     </p>
 
-    <!-- Steps -->
     <div class="grid md:grid-cols-4 gap-10">
 
       <!-- Step 1 -->
@@ -190,10 +128,7 @@ Adopt Me
         <p class="text-gray-600 text-sm mt-2">
           Click below to connect with us on WhatsApp and share your details.
         </p>
-
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/919594465856?text=Hello%20I%20am%20interested%20in%20dog%20adoption" target="_blank"
-           class="inline-block mt-4 bg-teal-600 text-white px-4 py-2 rounded-full text-sm hover:bg-teal-700 transition">
+        <a href="https://wa.me/919594465856?text=Hello%20I%20am%20interested%20in%20dog%20adoption" target="_blank" class="inline-block mt-4 bg-teal-600 text-white px-4 py-2 rounded-full text-sm hover:bg-teal-700 transition">
           Chat Now
         </a>
       </div>
@@ -220,129 +155,44 @@ Adopt Me
   </div>
 </section>
 
-
-
 <!-- CTA -->
-
 <section class="bg-teal-600 text-white py-24 text-center">
-
-<h2 class="text-4xl font-bold mb-6">
-Give a Dog a Forever Home 🐶
-</h2>
-
-<p class="max-w-2xl mx-auto mb-10">
-Adopting a rescued dog saves a life and fills your home with unconditional love.
-Join us in giving every dog a happy future.
-</p>
-
-<a href="#"
-class="bg-white text-teal-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100">
-Start Adoption
-</a>
-
+  <h2 class="text-4xl font-bold mb-6">Give a Dog a Forever Home 🐶</h2>
+  <p class="max-w-2xl mx-auto mb-10">
+    Adopting a rescued dog saves a life and fills your home with unconditional love. Join us in giving every dog a happy future.
+  </p>
+  <a href="#" class="bg-white text-teal-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100">Start Adoption</a>
 </section>
 
 <!-- FOOTER -->
-
 <div class="footer"></div>
 
-
-
+<!-- SCRIPTS -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="./footer.js"></script>
 <script src="./nav.js"></script>
+
 <script>
+  // Initialize AOS
+  AOS.init({ duration: 1000, once: true });
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if(menuBtn) menuBtn.addEventListener("click", () => { mobileMenu.classList.toggle("hidden"); });
+
+  // Project dropdown toggle
   const projectBtn = document.getElementById("projects-btn");
-const projectMenu = document.getElementById("projects-menu");
+  const projectMenu = document.getElementById("projects-menu");
+  if(projectBtn) projectBtn.addEventListener("click", () => { projectMenu.classList.toggle("hidden"); });
 
-projectBtn.addEventListener("click", () => {
-  projectMenu.classList.toggle("hidden");
-});
   const projectToggle = document.getElementById("project-toggle");
-const projectMobile = document.getElementById("project-mobile");
+  const projectMobile = document.getElementById("project-mobile");
+  if(projectToggle) projectToggle.addEventListener("click", () => { projectMobile.classList.toggle("hidden"); });
 
-projectToggle.addEventListener("click", () => {
-  projectMobile.classList.toggle("hidden");
-});
-
-/* MOBILE MENU TOGGLE */
-
-const menuBtn = document.getElementById("menu-btn")
-const mobileMenu = document.getElementById("mobile-menu")
-
-menuBtn.addEventListener("click", () => {
-
-mobileMenu.classList.toggle("hidden")
-
-})
-
-const counters = document.querySelectorAll('.counter');
-
-counters.forEach(counter => {
-
-const updateCount = () => {
-
-const target = +counter.getAttribute('data-target');
-const count = +counter.innerText;
-
-const speed = 50;
-
-const inc = target / speed;
-
-if(count < target){
-
-counter.innerText = Math.ceil(count + inc);
-setTimeout(updateCount,30);
-
-}
-
-else{
-
-counter.innerText = target;
-
-}
-
-};
-
-updateCount();
-
-});
-
-
-
-AOS.init({
-duration:1000,
-once:true
-});
-const faqButtons = document.querySelectorAll('.faq-btn');
-
-  faqButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const answer = btn.nextElementSibling;
-      const icon = btn.querySelector('.faq-icon');
-
-      answer.classList.toggle('hidden');
-      icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
-    });
-  });
-AOS.init({
-    once: true,
-    duration: 800,
-    offset: 120,
-  });
-
-
-
-
-// CLOSE MENU WHEN SCROLL
-window.addEventListener("scroll", () => {
-mobileMenu.classList.add("hidden");
-});
-
-
-
+  // Close mobile menu on scroll
+  window.addEventListener("scroll", () => { if(mobileMenu) mobileMenu.classList.add("hidden"); });
 </script>
 
 </body>
 </html>
-
