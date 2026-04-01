@@ -10,209 +10,99 @@
   
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
 </head>
 <style>
-    body,html{
-        overflow-x: hidden;
-    }
+  body, html { overflow-x: hidden; }
 </style>
-
 <body class="bg-slate-100">
-     <div class="nav"></div>
 
-<!-- HEADER -->
-<section class="bg-slate-700 text-white py-16 text-center">
-  <h1 class="text-3xl mt-20 md:text-5xl font-bold mb-4">
-    Women Support & <span class="text-teal-500">Empowerment</span> 
-  </h1>
-  <p class="max-w-2xl mx-auto text-gray-300">
-    We are here to support women through safety guidance, self-defence training, and awareness campaigns. You are not alone.
-  </p>
-</section>
+  <div class="nav"></div>
 
-<!-- FORM SECTION -->
-<section class="py-16 px-6 bg-slate-100">
-  <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl" data-aos="fade-up">
-
-    <h2 class="text-3xl font-bold text-center text-teal-600 mb-4">
-      Connect With Us 💬
-    </h2>
-
-    <p class="text-center text-gray-600 mb-10">
-      Need help, want to learn self-defence, or join our awareness campaigns?  
-      Fill the form below — we are here for you.
+  <!-- HEADER -->
+  <section class="bg-slate-700 text-white py-16 text-center">
+    <h1 class="text-3xl mt-20 md:text-5xl font-bold mb-4">
+      Women Support & <span class="text-teal-500">Empowerment</span> 
+    </h1>
+    <p class="max-w-2xl mx-auto text-gray-300">
+      We are here to support women through safety guidance, self-defence training, and awareness campaigns. You are not alone.
     </p>
+  </section>
 
-    <!-- FORM -->
-    <form id="supportForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <!-- FORM SECTION -->
+  <section class="py-16 px-6 bg-slate-100">
+    <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center text-teal-600 mb-4">Connect With Us 💬</h2>
+      <p class="text-center text-gray-600 mb-10">
+        Need help, want to learn self-defence, or join our awareness campaigns?  
+        Fill the form below — we are here for you.
+      </p>
 
-      <input type="text" placeholder="Your Name" required
-        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
+      <!-- FORM -->
+      <form id="supportForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input type="text" placeholder="Your Name" required class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
+        <input type="tel" placeholder="Phone Number" required class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
+        <input type="email" placeholder="Email Address" required class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
+        <select required class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
+          <option value="">Select Purpose</option>
+          <option>Women Safety / Help</option>
+          <option>Self Defence Training</option>
+          <option>Join Awareness Campaign</option>
+        </select>
+        <textarea placeholder="Describe your concern or interest..." required class="md:col-span-2 border p-3 rounded-lg h-32 focus:ring-2 focus:ring-teal-400 outline-none"></textarea>
+        <button class="md:col-span-2 bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-lg font-semibold transition">Submit</button>
+      </form>
+    </div>
+  </section>
 
-      <input type="tel" placeholder="Phone Number" required
-        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
-
-      <input type="email" placeholder="Email Address" required
-        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
-
-      <select required
-        class="border p-3 rounded-lg focus:ring-2 focus:ring-teal-400 outline-none">
-        <option value="">Select Purpose</option>
-        <option>Women Safety / Help</option>
-        <option>Self Defence Training</option>
-        <option>Join Awareness Campaign</option>
-      </select>
-
-      <textarea placeholder="Describe your concern or interest..." required
-        class="md:col-span-2 border p-3 rounded-lg h-32 focus:ring-2 focus:ring-teal-400 outline-none"></textarea>
-
-      <button
-        class="md:col-span-2 bg-teal-500 hover:bg-teal-600 text-white py-3 rounded-lg font-semibold transition">
-        Submit
-      </button>
-
-    </form>
-
-  </div>
-</section>
-
-
-
-<!-- SUCCESS POPUP -->
-<div id="successModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
-
-  <div class="bg-white p-8 rounded-2xl shadow-2xl text-center max-w-sm w-full animate-bounce">
-
-    <h3 class="text-2xl font-bold text-teal-600 mb-3">
-      Thank You 💜
-    </h3>
-
-    <p class="text-gray-600 mb-6">
-      Your response has been submitted successfully.  
-      We will contact you soon.
-    </p>
-
-    <button onclick="closeModal()"
-      class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg">
-      Close
-    </button>
-
+  <!-- SUCCESS POPUP -->
+  <div id="successModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+    <div class="bg-white p-8 rounded-2xl shadow-2xl text-center max-w-sm w-full animate-bounce">
+      <h3 class="text-2xl font-bold text-teal-600 mb-3">Thank You 💜</h3>
+      <p class="text-gray-600 mb-6">Your response has been submitted successfully. We will contact you soon.</p>
+      <button onclick="closeModal()" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg">Close</button>
+    </div>
   </div>
 
-</div>
+  <!-- FOOTER -->
+  <div class="footer"></div>
 
-<!-- FOOTER -->
-<div class="footer"></div>
-<script src="./footer.js"></script>
-<script src="./nav.js"></script>
-<!-- AOS Script -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  const projectBtn = document.getElementById("projects-btn");
-  const projectMenu = document.getElementById("projects-menu");
+  <script src="./footer.js"></script>
+  <script src="./nav.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-  projectBtn.addEventListener("click", () => {
-    projectMenu.classList.toggle("hidden");
-  });
-  const projectToggle = document.getElementById("project-toggle");
-  const projectMobile = document.getElementById("project-mobile");
+  <script>
+    // Initialize AOS
+    AOS.init({ duration: 1000, once: true, offset: 120 });
 
-  projectToggle.addEventListener("click", () => {
-    projectMobile.classList.toggle("hidden");
-  });
+    // MOBILE MENU TOGGLE (if menuBtn exists)
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    if(menuBtn && mobileMenu){
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      window.addEventListener("scroll", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    }
 
-  /* MOBILE MENU TOGGLE */
+    // FORM SUBMISSION
+    const form = document.getElementById("supportForm");
+    const modal = document.getElementById("successModal");
 
-  const menuBtn = document.getElementById("menu-btn")
-  const mobileMenu = document.getElementById("mobile-menu")
-
-  menuBtn.addEventListener("click", () => {
-
-    mobileMenu.classList.toggle("hidden")
-
-  })
-
-  
-  const counters = document.querySelectorAll('.counter');
-
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText.replace('+', '');
-
-      const increment = target / 100;
-
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment) + "+";
-        setTimeout(updateCount, 20);
-      } else {
-        counter.innerText = target + "+";
-      }
-    };
-
-    updateCount();
-  });
-
-
-
-
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-  const faqButtons = document.querySelectorAll('.faq-btn');
-
-  faqButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const answer = btn.nextElementSibling;
-      const icon = btn.querySelector('.faq-icon');
-
-      answer.classList.toggle('hidden');
-      icon.textContent = answer.classList.contains('hidden') ? '+' : '-';
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      form.reset();
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
     });
-  });
-  AOS.init({
-    once: true,
-    duration: 800,
-    offset: 120,
-  });
 
-
-
-
-  // CLOSE MENU WHEN SCROLL
-  window.addEventListener("scroll", () => {
-    mobileMenu.classList.add("hidden");
-  });
-
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-
-  const form = document.getElementById("supportForm");
-  const modal = document.getElementById("successModal");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    form.reset();
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-  });
-
-  function closeModal() {
-    modal.classList.add("hidden");
-  }
-</script>
-
+    function closeModal() {
+      modal.classList.add("hidden");
+    }
+  </script>
 </body>
 </html>
