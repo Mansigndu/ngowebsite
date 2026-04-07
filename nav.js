@@ -5,18 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
   nav.innerHTML = `
   <nav class="fixed top-0 w-full bg-slate-900 text-white shadow-lg z-50">
 
-    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
 
       <!-- Logo -->
-      <a href="index.html">
-        <h1 class="flex items-center gap-4 text-teal-400 font-extrabold text-xl tracking-wide uppercase">
-          <img src="./newimages/doglogo (2).jpg" class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-teal-400">
-          <span>WeFor aCause</span>
-        </h1>
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="./newimages/doglogo (2).jpg" 
+             class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full border-2 border-teal-400">
+
+        <span class="text-sm sm:text-lg md:text-xl font-bold text-teal-400 tracking-wide">
+          We For a Cause
+        </span>
       </a>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex items-center gap-6 font-medium">
+      <div class="hidden lg:flex items-center gap-6 font-medium text-sm md:text-base">
 
         <a href="./index.html" class="hover:text-teal-400">Home</a>
         <a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
@@ -28,12 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <!-- Dropdown -->
         <div class="relative">
-          <button id="projects-btn" class="hover:text-teal-400 flex items-center gap-1">
+          <button id="projects-btn" class="hover:text-teal-400">
             Projects ▼
           </button>
 
           <div id="projects-menu"
-            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2 z-60">
+            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2">
 
             <a href="./prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Bezuban</a>
             <a href="./prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Paryavarana</a>
@@ -45,21 +47,22 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
 
-        <a href="./donationform.html" class="bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-full">
+        <a href="./donationform.html" 
+           class="bg-teal-500 hover:bg-teal-600 px-4 py-2 rounded-full text-sm">
           Donate
         </a>
 
       </div>
 
       <!-- Mobile Button -->
-      <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+      <button id="menu-btn" class="lg:hidden text-3xl">☰</button>
 
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-700">
+    <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-t border-slate-700">
 
-      <div class="flex flex-col text-center py-6 space-y-4">
+      <div class="flex flex-col text-center py-6 space-y-4 text-sm">
 
         <a href="./index.html" class="hover:text-teal-400">Home</a>
         <a href="./gallery.html" class="hover:text-teal-400">Gallery</a>
@@ -75,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Projects ▼
           </button>
 
-          <div id="project-mobile" class="hidden flex flex-col mt-2 space-y-2">
+          <div id="project-mobile" class="hidden flex flex-col mt-2 space-y-2 text-gray-300">
 
             <a href="./prakalpbezuban.html">Prakalp Bezuban</a>
             <a href="./prakalpparyavarana.html">Prakalp Paryavarana</a>
@@ -87,7 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
 
-        <a href="./donationform.html" class="bg-teal-500 py-2 rounded-full mx-10">
+        <a href="./donationform.html" 
+           class="bg-teal-500 py-2 rounded-full mx-10">
           Donate
         </a>
 
@@ -125,17 +129,16 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("hidden");
   });
 
-  // Close dropdown when clicking outside
+  // Close dropdown outside click
   document.addEventListener("click", (e) => {
-    if (!projectBtn.contains(e.target) && !projectMenu.contains(e.target)) {
-      projectMenu.classList.add("hidden");
+    if (!projectBtn?.contains(e.target) && !projectMenu?.contains(e.target)) {
+      projectMenu?.classList.add("hidden");
     }
   });
 
   // Close mobile menu on scroll
   window.addEventListener("scroll", () => {
-    mobileMenu.classList.add("hidden");
+    mobileMenu?.classList.add("hidden");
   });
 
 });
-
