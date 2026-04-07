@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <!-- Logo -->
       <a href="index.html">
         <h1 class="flex items-center gap-4 text-teal-400 font-extrabold text-xl tracking-wide uppercase">
-          <img src="./images/doglogo.jpg" class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-teal-400">
+          <img src="./newimages/doglogo (2).jpg" class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-teal-400">
           <span>WeFor aCause</span>
         </h1>
       </a>
@@ -138,3 +138,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+

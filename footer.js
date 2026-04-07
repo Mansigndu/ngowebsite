@@ -114,3 +114,4 @@ footer.innerHTML = `
       © 2026 WE FOR A CAUSE FOUNDATION. All rights reserved.
     </div>
   </footer>`
+
