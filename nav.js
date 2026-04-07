@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
              class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full border-2 border-teal-400">
 
         <span class="text-sm sm:text-lg md:text-xl font-bold text-teal-400 tracking-wide">
-          We For a Cause
+          We For A Cause
         </span>
       </a>
 

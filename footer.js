@@ -6,7 +6,7 @@ footer.innerHTML = `
 
       <!-- Logo & About -->
       <div>
-       <a href="index.html"><h1 class="text-2xl font-bold text-teal-400 mb-4">WEFORACAUSE</h1></a>
+       <a href="index.html"><h1 class="text-2xl font-bold text-teal-400 mb-4">We For A Cause</h1></a>
         <p class="text-white text-sm">
           Dedicated to rescuing injured and abandoned animals, providing care, and helping them find loving homes.
         </p>
