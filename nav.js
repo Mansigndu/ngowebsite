@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
         <a href="./internship.html" class="hover:text-teal-400">Internship</a>
 
-        <!-- Dropdown -->
+        <!-- Projects Dropdown -->
         <div class="relative">
           <button id="projects-btn" class="hover:text-teal-400">
             Projects ▼
@@ -43,6 +43,21 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="./prakalpsaath.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Saath</a>
             <a href="./prakalpchaitanyan.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Chaitanyam</a>
             <a href="./prakalpmahwari.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Mahwari</a>
+
+          </div>
+        </div>
+
+        <!-- Partner Dropdown -->
+        <div class="relative">
+          <button id="partner-btn" class="hover:text-teal-400">
+            Partner ▼
+          </button>
+
+          <div id="partner-menu"
+            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2">
+
+            <a href="./prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50">CSR Partner</a>
+            <a href="./prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50">NGO Partner</a>
 
           </div>
         </div>
@@ -72,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
         <a href="./internship.html" class="hover:text-teal-400">Internship</a>
 
-        <!-- Mobile Dropdown -->
+        <!-- Mobile Projects Dropdown -->
         <div>
           <button id="project-toggle" class="hover:text-teal-400 w-full">
             Projects ▼
@@ -100,12 +115,24 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 
   </nav>
+
+  <!-- Floating Donate Button -->
+<a href="./donationform.html"
+   class="fixed bottom-5 right-5 bg-teal-500 hover:bg-teal-600 text-white 
+          w-16 h-16 flex items-center justify-center rounded-full shadow-lg 
+          text-xs font-semibold z-50">
+  Donate
+</a>
   `;
+
 
   // ===== EVENTS ===== //
 
   const projectBtn = document.getElementById("projects-btn");
   const projectMenu = document.getElementById("projects-menu");
+
+  const partnerBtn = document.getElementById("partner-btn");
+  const partnerMenu = document.getElementById("partner-menu");
 
   const projectToggle = document.getElementById("project-toggle");
   const projectMobile = document.getElementById("project-mobile");
@@ -113,10 +140,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  // Desktop dropdown
+  // Desktop dropdowns
   projectBtn?.addEventListener("click", (e) => {
     e.stopPropagation();
     projectMenu.classList.toggle("hidden");
+    partnerMenu.classList.add("hidden"); // close other
+  });
+
+  partnerBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    partnerMenu.classList.toggle("hidden");
+    projectMenu.classList.add("hidden"); // close other
   });
 
   // Mobile dropdown
@@ -129,10 +163,14 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("hidden");
   });
 
-  // Close dropdown outside click
+  // Close dropdowns on outside click
   document.addEventListener("click", (e) => {
     if (!projectBtn?.contains(e.target) && !projectMenu?.contains(e.target)) {
       projectMenu?.classList.add("hidden");
+    }
+
+    if (!partnerBtn?.contains(e.target) && !partnerMenu?.contains(e.target)) {
+      partnerMenu?.classList.add("hidden");
     }
   });
 
