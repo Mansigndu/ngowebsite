@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NGO Partner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="nav"></div>
+
+<div class="min-h-screen flex items-center mt-20 justify-center p-4">
+
+  <div class="w-full max-w-2xl bg-white p-6 rounded-2xl shadow-xl">
+
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold text-center text-teal-500 mb-2">
+      NGO Partnership Form
+    </h1>
+
+    <p class="text-center text-gray-500 mb-6">
+      Join hands with us to serve communities better.
+    </p>
+
+    <!-- FORM -->
+    <form class="space-y-4">
+
+      <input type="text" placeholder="NGO Name"
+        class="w-full p-3 border rounded-lg" required>
+
+      <input type="text" placeholder="Registration Number"
+        class="w-full p-3 border rounded-lg">
+
+      <input type="text" placeholder="Contact Person Name"
+        class="w-full p-3 border rounded-lg" required>
+
+      <input type="email" placeholder="Email Address"
+        class="w-full p-3 border rounded-lg" required>
+
+      <input type="tel" placeholder="Phone Number"
+        class="w-full p-3 border rounded-lg" required>
+
+      <div class="grid grid-cols-2 gap-3">
+        <input type="text" placeholder="State"
+          class="p-3 border rounded-lg">
+        <input type="text" placeholder="City"
+          class="p-3 border rounded-lg">
+      </div>
+
+      <textarea placeholder="About NGO / Work Area"
+        class="w-full p-3 border rounded-lg"></textarea>
+
+      <button class="w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600">
+        Submit
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+<div class="footer"></div>
+
+</body>
+<script src="./nav.js"></script>
+<script src="./footer.js"></script>
+</html>

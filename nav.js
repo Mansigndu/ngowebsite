@@ -25,9 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="./about.html" class="hover:text-teal-400">About</a>
         <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
         <a href="./fundraising.html" class="hover:text-teal-400">Fundraising</a>
-        <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
-        <a href="./internship.html" class="hover:text-teal-400">Internship</a>
-
+        
         <!-- Projects Dropdown -->
         <div class="relative">
           <button id="projects-btn" class="hover:text-teal-400">
@@ -47,20 +45,50 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
 
-        <!-- Partner Dropdown -->
-        <div class="relative">
-          <button id="partner-btn" class="hover:text-teal-400">
-            Partner ▼
-          </button>
+        <!-- Get Involved Dropdown -->
+<div class="relative">
+  <button id="getinvolved-btn" class="hover:text-teal-400">
+    Get Involved ▼
+  </button>
 
-          <div id="partner-menu"
-            class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2">
+  <!-- Main Dropdown -->
+  <div id="getinvolved-menu"
+    class="hidden absolute left-0 mt-3 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2">
 
-            <a href="./prakalpbezuban.html" class="block px-5 py-2 hover:bg-teal-50">CSR Partner</a>
-            <a href="./prakalpparyavarana.html" class="block px-5 py-2 hover:bg-teal-50">NGO Partner</a>
+    <a href="./volunteerform.html" class="block px-5 py-2 hover:bg-teal-50">
+      Volunteer
+    </a>
 
-          </div>
-        </div>
+    <a href="./internship.html" class="block px-5 py-2 hover:bg-teal-50">
+      Internship
+    </a>
+
+    <!-- Partner With Us -->
+    <!-- Partner With Us -->
+<div class="relative">
+
+  <button id="partner-sub-btn"
+    class="w-full text-left px-5 py-2 hover:bg-teal-50 flex justify-between items-center">
+    Partner With Us ▼
+  </button>
+
+  <!-- Sub Dropdown (NOW BELOW, NOT SIDE) -->
+  <div id="partner-sub-menu"
+    class="hidden mt-1 ml-4 bg-white text-gray-700 rounded-xl shadow-xl w-56 py-2">
+
+    <a href="./csrpartnerform.html" class="block px-5 py-2 hover:bg-teal-50">
+      CSR Partner
+    </a>
+
+    <a href="./ngopartnerform.html" class="block px-5 py-2 hover:bg-teal-50">
+      NGO Partner
+    </a>
+
+  </div>
+
+</div>
+  </div>
+</div>
 
         <a href="./donationform.html" 
            class="bg-teal-500 hover:bg-teal-600 px-4 py-2 rounded-full text-sm">
@@ -84,8 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="./about.html" class="hover:text-teal-400">About</a>
         <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
         <a href="./fundraising.html" class="hover:text-teal-400">Fundraising</a>
-        <a href="./volunteerform.html" class="hover:text-teal-400">Volunteer</a>
-        <a href="./internship.html" class="hover:text-teal-400">Internship</a>
+        
+        
 
         <!-- Mobile Projects Dropdown -->
         <div>
@@ -104,6 +132,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
           </div>
         </div>
+        <!-- Get Involved (Mobile) -->
+<div>
+  <button id="getinvolved-toggle" class="hover:text-teal-400 w-full">
+    Get Involved ▼
+  </button>
+
+  <!-- Get Involved Dropdown -->
+  <div id="getinvolved-mobile" class="hidden flex flex-col mt-2 space-y-2 text-gray-300">
+
+    <a href="./volunteerform.html">Volunteer</a>
+    <a href="./internship.html">Internship</a>
+
+    <!-- Partner With Us -->
+    <div>
+      <button id="partner-mobile-toggle" class="w-full">
+        Partner With Us ▼
+      </button>
+
+      <!-- Submenu -->
+      <div id="partner-mobile-menu" class="hidden flex flex-col ml-4 mt-2 space-y-2">
+
+        <a href="./csrpartnerform.html">CSR Partner</a>
+        <a href="./ngopartnerform.html">NGO Partner</a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
 
         <a href="./donationform.html" 
            class="bg-teal-500 py-2 rounded-full mx-10">
@@ -127,6 +184,113 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // ===== EVENTS ===== //
+  
+document.addEventListener("DOMContentLoaded", () => {
+
+  // ===== ELEMENTS ===== //
+
+  const projectBtn = document.getElementById("projects-btn");
+  const projectMenu = document.getElementById("projects-menu");
+
+  const getBtn = document.getElementById("getinvolved-btn");
+  const getMenu = document.getElementById("getinvolved-menu");
+
+  const partnerSubBtn = document.getElementById("partner-sub-btn");
+  const partnerSubMenu = document.getElementById("partner-sub-menu");
+
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  const projectToggle = document.getElementById("project-toggle");
+  const projectMobile = document.getElementById("project-mobile");
+
+  const getMobileToggle = document.getElementById("getinvolved-toggle");
+  const getMobileMenu = document.getElementById("getinvolved-mobile");
+
+  const partnerMobileToggle = document.getElementById("partner-mobile-toggle");
+  const partnerMobileMenu = document.getElementById("partner-mobile-menu");
+
+
+  // ===== DESKTOP DROPDOWNS ===== //
+
+  // Projects
+  projectBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    projectMenu.classList.toggle("hidden");
+    getMenu?.classList.add("hidden");
+  });
+
+  // Get Involved
+  getBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    getMenu.classList.toggle("hidden");
+    projectMenu?.classList.add("hidden");
+  });
+
+  // Partner sub dropdown
+  partnerSubBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    partnerSubMenu.classList.toggle("hidden");
+  });
+
+
+  // ===== MOBILE MENU ===== //
+
+  // Hamburger
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  // Projects mobile
+  projectToggle?.addEventListener("click", () => {
+    projectMobile.classList.toggle("hidden");
+  });
+
+  // Get Involved mobile
+  getMobileToggle?.addEventListener("click", () => {
+    getMobileMenu.classList.toggle("hidden");
+  });
+
+  // Partner mobile
+  partnerMobileToggle?.addEventListener("click", () => {
+    partnerMobileMenu.classList.toggle("hidden");
+  });
+
+
+  // ===== CLOSE ON OUTSIDE CLICK ===== //
+
+  document.addEventListener("click", (e) => {
+
+    if (!projectBtn?.contains(e.target) && !projectMenu?.contains(e.target)) {
+      projectMenu?.classList.add("hidden");
+    }
+
+    if (!getBtn?.contains(e.target) && !getMenu?.contains(e.target)) {
+      getMenu?.classList.add("hidden");
+    }
+
+    if (!partnerSubBtn?.contains(e.target) && !partnerSubMenu?.contains(e.target)) {
+      partnerSubMenu?.classList.add("hidden");
+    }
+
+  });
+
+
+  // ===== SCROLL CLOSE ===== //
+
+  window.addEventListener("scroll", () => {
+    mobileMenu?.classList.add("hidden");
+    projectMobile?.classList.add("hidden");
+    getMobileMenu?.classList.add("hidden");
+    partnerMobileMenu?.classList.add("hidden");
+
+    projectMenu?.classList.add("hidden");
+    getMenu?.classList.add("hidden");
+    partnerSubMenu?.classList.add("hidden");
+  });
+
+});
+
 
   const projectBtn = document.getElementById("projects-btn");
   const projectMenu = document.getElementById("projects-menu");
@@ -147,11 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
     partnerMenu.classList.add("hidden"); // close other
   });
 
-  partnerBtn?.addEventListener("click", (e) => {
-    e.stopPropagation();
-    partnerMenu.classList.toggle("hidden");
-    projectMenu.classList.add("hidden"); // close other
-  });
+  
 
   // Mobile dropdown
   projectToggle?.addEventListener("click", () => {
@@ -177,6 +337,69 @@ document.addEventListener("DOMContentLoaded", () => {
   // Close mobile menu on scroll
   window.addEventListener("scroll", () => {
     mobileMenu?.classList.add("hidden");
+  });
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+  // ===== DESKTOP ===== //
+  const getBtn = document.getElementById("getinvolved-btn");
+  const getMenu = document.getElementById("getinvolved-menu");
+
+  const partnerSubBtn = document.getElementById("partner-sub-btn");
+  const partnerSubMenu = document.getElementById("partner-sub-menu");
+
+  // Get Involved toggle
+  getBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    getMenu.classList.toggle("hidden");
+  });
+
+  // Partner sub dropdown
+  partnerSubBtn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    partnerSubMenu.classList.toggle("hidden");
+  });
+
+
+  // ===== MOBILE ===== //
+  const getMobileToggle = document.getElementById("getinvolved-toggle");
+  const getMobileMenu = document.getElementById("getinvolved-mobile");
+
+  const partnerMobileToggle = document.getElementById("partner-mobile-toggle");
+  const partnerMobileMenu = document.getElementById("partner-mobile-menu");
+
+  // Get Involved mobile
+  getMobileToggle?.addEventListener("click", () => {
+    getMobileMenu.classList.toggle("hidden");
+  });
+
+  // Partner mobile
+  partnerMobileToggle?.addEventListener("click", () => {
+    partnerMobileMenu.classList.toggle("hidden");
+  });
+
+
+  // ===== OUTSIDE CLICK CLOSE ===== //
+  document.addEventListener("click", (e) => {
+
+    if (!getBtn?.contains(e.target) && !getMenu?.contains(e.target)) {
+      getMenu?.classList.add("hidden");
+    }
+
+    if (!partnerSubBtn?.contains(e.target) && !partnerSubMenu?.contains(e.target)) {
+      partnerSubMenu?.classList.add("hidden");
+    }
+
+  });
+
+
+  // ===== SCROLL CLOSE ===== //
+  window.addEventListener("scroll", () => {
+    getMenu?.classList.add("hidden");
+    partnerSubMenu?.classList.add("hidden");
+    getMobileMenu?.classList.add("hidden");
+    partnerMobileMenu?.classList.add("hidden");
   });
 
 });
