@@ -1,66 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>NGO Partner</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGO Partnership</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  html, body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
 </head>
 
-<body class="bg-gray-100">
-    <div class="nav"></div>
+<body class="bg-slate-50">
 
-<div class="w-full min-h-screen bg-gray-100 pt-24 pb-10 px-4">
+<!-- NAV -->
+<div class="nav"></div>
 
- <div class="w-full max-w-2xl bg-white p-6 rounded-2xl shadow-xl mx-auto">
-    <!-- Heading -->
-    <h1 class="text-3xl font-bold text-center text-teal-500 mb-2">
-      NGO Partnership Form
-    </h1>
+<!-- SECTION -->
+<section class="py-16 px-4">
 
-    <p class="text-center text-gray-500 mb-6">
-      Join hands with us to serve communities better.
-    </p>
+  <div class="max-w-4xl mx-auto">
 
-    <!-- FORM -->
-    <form class="space-y-4">
+    <!-- HEADING -->
+    <div class="text-center mb-10" data-aos="fade-down">
+      <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mt-20 mb-2">
+        NGO Partnership Form
+      </h1>
+      <p class="text-teal-600 font-semibold">
+        Join hands with us to serve communities better
+      </p>
+    </div>
 
-      <input type="text" placeholder="NGO Name"
-        class="w-full p-3 border rounded-lg" required>
+    <!-- FORM CARD -->
+    <form class="bg-white shadow-xl rounded-2xl p-6 md:p-10 space-y-6" data-aos="fade-up">
 
-      <input type="text" placeholder="Registration Number"
-        class="w-full p-3 border rounded-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="text-sm font-medium text-gray-700">NGO Name *</label>
+          <input type="text" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none" required>
+        </div>
 
-      <input type="text" placeholder="Contact Person Name"
-        class="w-full p-3 border rounded-lg" required>
-
-      <input type="email" placeholder="Email Address"
-        class="w-full p-3 border rounded-lg" required>
-
-      <input type="tel" placeholder="Phone Number"
-        class="w-full p-3 border rounded-lg" required>
-
-      <div class="grid grid-cols-2 gap-3">
-        <input type="text" placeholder="State"
-          class="p-3 border rounded-lg">
-        <input type="text" placeholder="City"
-          class="p-3 border rounded-lg">
+        <div>
+          <label class="text-sm font-medium text-gray-700">Registration Number</label>
+          <input type="text" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none">
+        </div>
       </div>
 
-      <textarea placeholder="About NGO / Work Area"
-        class="w-full p-3 border rounded-lg"></textarea>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="text-sm font-medium text-gray-700">Contact Person *</label>
+          <input type="text" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none" required>
+        </div>
 
-      <button class="w-full bg-teal-500 text-white py-3 rounded-lg hover:bg-teal-600">
-        Submit
-      </button>
+        <div>
+          <label class="text-sm font-medium text-gray-700">Email *</label>
+          <input type="email" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none" required>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="text-sm font-medium text-gray-700">Phone *</label>
+          <input type="tel" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none" required>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-sm font-medium text-gray-700">State</label>
+            <input type="text" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none">
+          </div>
+
+          <div>
+            <label class="text-sm font-medium text-gray-700">City</label>
+            <input type="text" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none">
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label class="text-sm font-medium text-gray-700">About NGO / Work Area</label>
+        <textarea rows="4" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-teal-500 outline-none"></textarea>
+      </div>
+
+      <div class="text-center pt-4">
+        <button class="bg-teal-500 hover:bg-teal-600 text-white px-10 py-3 rounded-full font-semibold shadow-md transition">
+          Submit
+        </button>
+      </div>
 
     </form>
 
   </div>
 
-</div>
+</section>
+
+<!-- FOOTER -->
 <div class="footer"></div>
 
-</body>
 <script src="./nav.js"></script>
 <script src="./footer.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
 </html>
