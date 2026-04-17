@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="./about.html" class="hover:text-teal-400">About</a>
         <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
         <a href="./fundraising.html" class="hover:text-teal-400">Fundraising</a>
-        <a href="newsblog.html" class="hover:text-teal-500">
+        <a href="./newsblog.html" class="hover:text-teal-500">
   News Blog
 </a>
         
@@ -115,6 +115,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="./about.html" class="hover:text-teal-400">About</a>
         <a href="./adopt.html" class="hover:text-teal-400">Adopt</a>
         <a href="./fundraising.html" class="hover:text-teal-400">Fundraising</a>
+         <a href="./newsblog.html" class="hover:text-teal-400">
+  News Blog
+</a>
         
         
 
