@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="./prakalpsaath.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Saath</a>
             <a href="./prakalpchaitanyan.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Chaitanyam</a>
             <a href="./prakalpmahwari.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Mahwari</a>
+            <a href="./prakalpkhel.html" class="block px-5 py-2 hover:bg-teal-50">Prakalp Khel</a>
+
 
           </div>
         </div>
@@ -135,6 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="./prakalpsaath.html">Prakalp Saath</a>
             <a href="./prakalpchaitanyan.html">Prakalp Chaitanyam</a>
             <a href="./prakalpmahwari.html">Prakalp Mahwari</a>
+             <a href="./prakalpkhel.html">Prakalp Khel</a>
 
           </div>
         </div>
